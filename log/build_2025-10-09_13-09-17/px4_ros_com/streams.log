@@ -1,0 +1,15 @@
+[0.510s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/px4_ros_com -- -j22 -l22
+[0.580s] [ 16%] Built target debug_vect_advertiser
+[0.581s] [ 33%] Built target frame_transforms
+[0.581s] [ 50%] Built target vehicle_gps_position_listener
+[0.582s] [ 66%] Built target sensor_combined_listener
+[0.582s] [ 83%] Built target offboard_control
+[0.585s] [100%] Built target offboard_control_srv
+[0.590s] [100%] Built target ament_cmake_python_symlink_px4_ros_com
+[1.029s] running egg_info
+[1.045s] writing px4_ros_com.egg-info/PKG-INFO
+[1.365s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[1.365s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[1.408s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.409s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.451s] [100%] Built target ament_cmake_python_build_px4_ros_com_egg

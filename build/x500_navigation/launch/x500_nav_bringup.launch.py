@@ -1,0 +1,1 @@
+/home/imamalghifary/ws_sensor_combined/src/x500_navigation/launch/x500_nav_bringup.launch.py

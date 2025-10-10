@@ -1,0 +1,17 @@
+[1.108s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/x500_navigation': PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build --no-deps symlink_data
+[1.660s] running develop
+[2.052s] running egg_info
+[2.067s] writing x500_navigation.egg-info/PKG-INFO
+[2.068s] writing dependency_links to x500_navigation.egg-info/dependency_links.txt
+[2.068s] writing entry points to x500_navigation.egg-info/entry_points.txt
+[2.068s] writing requirements to x500_navigation.egg-info/requires.txt
+[2.068s] writing top-level names to x500_navigation.egg-info/top_level.txt
+[2.105s] reading manifest file 'x500_navigation.egg-info/SOURCES.txt'
+[2.106s] writing manifest file 'x500_navigation.egg-info/SOURCES.txt'
+[2.133s] running build_ext
+[2.134s] Creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages/x500-navigation.egg-link (link to .)
+[2.135s] Installing odom_bridge_2d script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[2.136s] 
+[2.136s] Installed /home/imamalghifary/ws_sensor_combined/build/x500_navigation
+[2.136s] running symlink_data
+[2.482s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/x500_navigation' returned '0': PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build --no-deps symlink_data

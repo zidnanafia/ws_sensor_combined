@@ -1,0 +1,3 @@
+[console_scripts]
+odom_bridge = x500_bridge.odom_bridge:main
+scan_relay = x500_bridge.scan_relay:main

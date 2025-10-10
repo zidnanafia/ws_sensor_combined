@@ -1,0 +1,502 @@
+[0.303s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.303s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=22, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7e9dcbd67790>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e9dcbd671c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e9dcbd671c0>>, mixin_verb=('build',))
+[5.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[5.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[5.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[5.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[5.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[5.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[5.229s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/imamalghifary/ws_sensor_combined'
+[5.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[5.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[5.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[5.229s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[5.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[5.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[5.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[5.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[5.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[5.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[5.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[5.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[5.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[5.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[5.335s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[5.335s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[5.335s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[5.335s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extensions ['ignore', 'ignore_ament_install']
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extension 'ignore'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extension 'ignore_ament_install'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extensions ['colcon_pkg']
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extension 'colcon_pkg'
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extensions ['colcon_meta']
+[5.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extension 'colcon_meta'
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extensions ['ros']
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extension 'ros'
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extensions ['cmake', 'python']
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extension 'cmake'
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extension 'python'
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extensions ['python_setup_py']
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example) by extension 'python_setup_py'
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extensions ['ignore', 'ignore_ament_install']
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extension 'ignore'
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extension 'ignore_ament_install'
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extensions ['colcon_pkg']
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extension 'colcon_pkg'
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extensions ['colcon_meta']
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extension 'colcon_meta'
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extensions ['ros']
+[5.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_PX4_Offboard_Example/px4_offboard) by extension 'ros'
+[5.412s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ROS2_PX4_Offboard_Example/px4_offboard' with type 'ros.ament_python' and name 'px4_offboard'
+[5.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[5.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[5.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[5.412s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[5.413s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[5.444s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[5.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[5.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[5.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[5.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[5.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[5.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[5.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[5.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[5.444s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[5.463s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_bridge) by extensions ['ignore', 'ignore_ament_install']
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_bridge) by extension 'ignore'
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_bridge) by extension 'ignore_ament_install'
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_bridge) by extensions ['colcon_pkg']
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_bridge) by extension 'colcon_pkg'
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_bridge) by extensions ['colcon_meta']
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_bridge) by extension 'colcon_meta'
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_bridge) by extensions ['ros']
+[5.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_bridge) by extension 'ros'
+[5.475s] DEBUG:colcon.colcon_core.package_identification:Package 'src/x500_bridge' with type 'ros.ament_python' and name 'x500_bridge'
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_description) by extensions ['ignore', 'ignore_ament_install']
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_description) by extension 'ignore'
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_description) by extension 'ignore_ament_install'
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_description) by extensions ['colcon_pkg']
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_description) by extension 'colcon_pkg'
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_description) by extensions ['colcon_meta']
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_description) by extension 'colcon_meta'
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_description) by extensions ['ros']
+[5.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_description) by extension 'ros'
+[5.495s] DEBUG:colcon.colcon_core.package_identification:Package 'src/x500_description' with type 'ros.ament_cmake' and name 'x500_description'
+[5.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_navigation) by extensions ['ignore', 'ignore_ament_install']
+[5.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_navigation) by extension 'ignore'
+[5.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_navigation) by extension 'ignore_ament_install'
+[5.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_navigation) by extensions ['colcon_pkg']
+[5.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_navigation) by extension 'colcon_pkg'
+[5.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_navigation) by extensions ['colcon_meta']
+[5.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_navigation) by extension 'colcon_meta'
+[5.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_navigation) by extensions ['ros']
+[5.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/x500_navigation) by extension 'ros'
+[5.507s] DEBUG:colcon.colcon_core.package_identification:Package 'src/x500_navigation' with type 'ros.ament_python' and name 'x500_navigation'
+[5.507s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[5.507s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[5.507s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[5.507s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[5.507s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[5.637s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[5.639s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/imamalghifary/ws_sensor_combined/install
+[5.640s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 370 installed packages in /opt/ros/humble
+[5.641s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.714s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[5.714s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[5.714s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.714s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[5.714s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[5.714s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[5.714s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[5.714s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[5.714s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.714s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/imamalghifary/ws_sensor_combined/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/imamalghifary/ws_sensor_combined/install/px4_msgs', 'merge_install': False, 'path': '/home/imamalghifary/ws_sensor_combined/src/px4_msgs', 'symlink_install': True, 'test_result_base': None}
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_description' build argument 'cmake_args' from command line to 'None'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_description' build argument 'cmake_target' from command line to 'None'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_description' build argument 'cmake_clean_cache' from command line to 'False'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_description' build argument 'cmake_clean_first' from command line to 'False'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_description' build argument 'cmake_force_configure' from command line to 'False'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_description' build argument 'ament_cmake_args' from command line to 'None'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_description' build argument 'catkin_cmake_args' from command line to 'None'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.715s] DEBUG:colcon.colcon_core.verb:Building package 'x500_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/imamalghifary/ws_sensor_combined/build/x500_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/imamalghifary/ws_sensor_combined/install/x500_description', 'merge_install': False, 'path': '/home/imamalghifary/ws_sensor_combined/src/x500_description', 'symlink_install': True, 'test_result_base': None}
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_navigation' build argument 'cmake_args' from command line to 'None'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_navigation' build argument 'cmake_target' from command line to 'None'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[5.715s] Level 5:colcon.colcon_core.verb:set package 'x500_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.715s] DEBUG:colcon.colcon_core.verb:Building package 'x500_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/imamalghifary/ws_sensor_combined/build/x500_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/imamalghifary/ws_sensor_combined/install/x500_navigation', 'merge_install': False, 'path': '/home/imamalghifary/ws_sensor_combined/src/x500_navigation', 'symlink_install': True, 'test_result_base': None}
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_offboard' build argument 'cmake_args' from command line to 'None'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_offboard' build argument 'cmake_target' from command line to 'None'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_offboard' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_offboard' build argument 'cmake_clean_cache' from command line to 'False'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_offboard' build argument 'cmake_clean_first' from command line to 'False'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_offboard' build argument 'cmake_force_configure' from command line to 'False'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_offboard' build argument 'ament_cmake_args' from command line to 'None'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_offboard' build argument 'catkin_cmake_args' from command line to 'None'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_offboard' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.716s] DEBUG:colcon.colcon_core.verb:Building package 'px4_offboard' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/imamalghifary/ws_sensor_combined/build/px4_offboard', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/imamalghifary/ws_sensor_combined/install/px4_offboard', 'merge_install': False, 'path': '/home/imamalghifary/ws_sensor_combined/src/ROS2_PX4_Offboard_Example/px4_offboard', 'symlink_install': True, 'test_result_base': None}
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[5.716s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.716s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/imamalghifary/ws_sensor_combined/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com', 'merge_install': False, 'path': '/home/imamalghifary/ws_sensor_combined/src/px4_ros_com', 'symlink_install': True, 'test_result_base': None}
+[5.717s] Level 5:colcon.colcon_core.verb:set package 'x500_bridge' build argument 'cmake_args' from command line to 'None'
+[5.717s] Level 5:colcon.colcon_core.verb:set package 'x500_bridge' build argument 'cmake_target' from command line to 'None'
+[5.717s] Level 5:colcon.colcon_core.verb:set package 'x500_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.717s] Level 5:colcon.colcon_core.verb:set package 'x500_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[5.717s] Level 5:colcon.colcon_core.verb:set package 'x500_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[5.717s] Level 5:colcon.colcon_core.verb:set package 'x500_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[5.717s] Level 5:colcon.colcon_core.verb:set package 'x500_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[5.717s] Level 5:colcon.colcon_core.verb:set package 'x500_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[5.717s] Level 5:colcon.colcon_core.verb:set package 'x500_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.717s] DEBUG:colcon.colcon_core.verb:Building package 'x500_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/imamalghifary/ws_sensor_combined/build/x500_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/imamalghifary/ws_sensor_combined/install/x500_bridge', 'merge_install': False, 'path': '/home/imamalghifary/ws_sensor_combined/src/x500_bridge', 'symlink_install': True, 'test_result_base': None}
+[5.717s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.718s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.718s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/imamalghifary/ws_sensor_combined/src/px4_msgs' with build type 'ament_cmake'
+[5.718s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/imamalghifary/ws_sensor_combined/src/px4_msgs'
+[5.769s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.769s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.769s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.781s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/imamalghifary/ws_sensor_combined/src/x500_description' with build type 'ament_cmake'
+[5.781s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/imamalghifary/ws_sensor_combined/src/x500_description'
+[5.782s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.782s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.784s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/imamalghifary/ws_sensor_combined/src/x500_navigation' with build type 'ament_python'
+[5.784s] Level 1:colcon.colcon_core.shell:create_environment_hook('x500_navigation', 'ament_prefix_path')
+[5.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/hook/ament_prefix_path.ps1'
+[5.785s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/hook/ament_prefix_path.dsv'
+[5.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/hook/ament_prefix_path.sh'
+[5.787s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.787s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake /home/imamalghifary/ws_sensor_combined/src/px4_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imamalghifary/ws_sensor_combined/install/px4_msgs
+[6.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/x500_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake /home/imamalghifary/ws_sensor_combined/src/x500_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imamalghifary/ws_sensor_combined/install/x500_description
+[6.698s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/imamalghifary/ws_sensor_combined/src/x500_navigation'
+[6.698s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.698s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/x500_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake /home/imamalghifary/ws_sensor_combined/src/x500_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imamalghifary/ws_sensor_combined/install/x500_description
+[8.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/x500_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/x500_description -- -j22 -l22
+[8.577s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/x500_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/x500_description -- -j22 -l22
+[8.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/x500_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/imamalghifary/ws_sensor_combined/build/x500_description
+[8.696s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(x500_description)
+[8.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/x500_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/imamalghifary/ws_sensor_combined/build/x500_description
+[8.762s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description' for CMake module files
+[8.762s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description' for CMake config files
+[8.763s] Level 1:colcon.colcon_core.shell:create_environment_hook('x500_description', 'cmake_prefix_path')
+[8.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/hook/cmake_prefix_path.ps1'
+[8.764s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/hook/cmake_prefix_path.dsv'
+[8.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/hook/cmake_prefix_path.sh'
+[8.765s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description/bin'
+[8.765s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description/lib/pkgconfig/x500_description.pc'
+[8.765s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description/lib/python3.10/site-packages'
+[8.765s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description/bin'
+[8.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/package.ps1'
+[8.783s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/package.dsv'
+[8.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/package.sh'
+[8.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/package.bash'
+[8.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/package.zsh'
+[8.843s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/imamalghifary/ws_sensor_combined/install/x500_description/share/colcon-core/packages/x500_description)
+[8.844s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(x500_description)
+[8.844s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description' for CMake module files
+[8.844s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description' for CMake config files
+[8.844s] Level 1:colcon.colcon_core.shell:create_environment_hook('x500_description', 'cmake_prefix_path')
+[8.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/hook/cmake_prefix_path.ps1'
+[8.845s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/hook/cmake_prefix_path.dsv'
+[8.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/hook/cmake_prefix_path.sh'
+[8.845s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description/bin'
+[8.845s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description/lib/pkgconfig/x500_description.pc'
+[8.846s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description/lib/python3.10/site-packages'
+[8.846s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_description/bin'
+[8.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/package.ps1'
+[8.861s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/package.dsv'
+[8.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/package.sh'
+[8.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/package.bash'
+[8.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/package.zsh'
+[8.863s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/imamalghifary/ws_sensor_combined/install/x500_description/share/colcon-core/packages/x500_description)
+[8.954s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/ament_index/resource_index/packages/x500_navigation
+[8.954s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/package.xml
+[8.954s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/launch/x500_navigation.launch.py
+[8.954s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/launch/x500_nav_bringup.launch.py
+[8.954s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/params/nav2_params.yaml
+[8.954s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/maps/walls_map.yaml
+[8.954s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/maps/walls_map.pgm
+[8.954s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/rviz/x500_nav.rviz
+[8.954s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation/odom_bridge_2d
+[8.956s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/x500_navigation': PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build --no-deps symlink_data --force
+[9.684s] Level 1:colcon.colcon_core.shell:create_environment_hook('x500_navigation', 'pythonpath_develop')
+[9.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/build/x500_navigation/share/x500_navigation/hook/pythonpath_develop.ps1'
+[9.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/x500_navigation' returned '0': PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build --no-deps symlink_data --force
+[9.699s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/build/x500_navigation/share/x500_navigation/hook/pythonpath_develop.dsv'
+[9.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/build/x500_navigation/share/x500_navigation/hook/pythonpath_develop.sh'
+[9.701s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_navigation' for CMake module files
+[9.702s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_navigation' for CMake config files
+[9.702s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib'
+[9.703s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/bin'
+[9.703s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/pkgconfig/x500_navigation.pc'
+[9.703s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages'
+[9.703s] Level 1:colcon.colcon_core.shell:create_environment_hook('x500_navigation', 'pythonpath')
+[9.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/hook/pythonpath.ps1'
+[9.704s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/hook/pythonpath.dsv'
+[9.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/hook/pythonpath.sh'
+[9.705s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/bin'
+[9.706s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(x500_navigation)
+[9.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/package.ps1'
+[9.707s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/package.dsv'
+[9.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/package.sh'
+[9.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/package.bash'
+[9.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/package.zsh'
+[9.709s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/colcon-core/packages/x500_navigation)
+[15.167s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake /home/imamalghifary/ws_sensor_combined/src/px4_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imamalghifary/ws_sensor_combined/install/px4_msgs
+[15.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/px4_msgs -- -j22 -l22
+[19.488s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/px4_msgs -- -j22 -l22
+[19.516s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/imamalghifary/ws_sensor_combined/build/px4_msgs
+[20.394s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[20.394s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs' for CMake module files
+[20.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/imamalghifary/ws_sensor_combined/build/px4_msgs
+[20.395s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs' for CMake config files
+[20.396s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[20.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[20.396s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[20.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[20.398s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib'
+[20.398s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[20.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[20.398s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[20.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[20.399s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/bin'
+[20.399s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[20.400s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[20.400s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/bin'
+[20.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[20.401s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[20.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[20.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[20.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[20.402s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[20.403s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[20.403s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs' for CMake module files
+[20.404s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs' for CMake config files
+[20.404s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[20.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[20.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[20.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[20.406s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib'
+[20.406s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[20.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[20.407s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[20.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[20.407s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/bin'
+[20.407s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[20.408s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib/python3.10/site-packages'
+[20.408s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/bin'
+[20.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.ps1'
+[20.409s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.dsv'
+[20.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.sh'
+[20.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.bash'
+[20.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/package.zsh'
+[20.410s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[20.411s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/imamalghifary/ws_sensor_combined/src/ROS2_PX4_Offboard_Example/px4_offboard' with build type 'ament_python'
+[20.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_offboard', 'ament_prefix_path')
+[20.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/hook/ament_prefix_path.ps1'
+[20.412s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/hook/ament_prefix_path.dsv'
+[20.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/hook/ament_prefix_path.sh'
+[20.413s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[20.413s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[20.417s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/imamalghifary/ws_sensor_combined/src/px4_ros_com' with build type 'ament_cmake'
+[20.417s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/imamalghifary/ws_sensor_combined/src/px4_ros_com'
+[20.417s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[20.417s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[20.421s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/imamalghifary/ws_sensor_combined/src/x500_bridge' with build type 'ament_python'
+[20.421s] Level 1:colcon.colcon_core.shell:create_environment_hook('x500_bridge', 'ament_prefix_path')
+[20.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/hook/ament_prefix_path.ps1'
+[20.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/hook/ament_prefix_path.dsv'
+[20.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/hook/ament_prefix_path.sh'
+[20.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[20.423s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[20.871s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/imamalghifary/ws_sensor_combined/src/ROS2_PX4_Offboard_Example/px4_offboard'
+[20.871s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[20.871s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[20.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/imamalghifary/ws_sensor_combined/src/px4_ros_com -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imamalghifary/ws_sensor_combined/install/px4_ros_com
+[21.412s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/imamalghifary/ws_sensor_combined/src/x500_bridge'
+[21.412s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[21.412s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.045s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/ament_index/resource_index/packages/px4_offboard
+[22.045s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/ament_index/resource_index/packages/visualize.rviz
+[22.045s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/package.xml
+[22.045s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/offboard_velocity_control.launch.py
+[22.045s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/visualize.rviz
+[22.046s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/px4_offboard/control
+[22.046s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/px4_offboard/offboard_control
+[22.046s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/px4_offboard/processes
+[22.046s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/px4_offboard/velocity_control
+[22.046s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/px4_offboard/visualizer
+[22.048s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/px4_offboard': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/px4_offboard/build --no-deps symlink_data --force
+[22.118s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/ament_index/resource_index/packages/x500_bridge
+[22.119s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/package.xml
+[22.119s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/launch/slam_with_px4.launch.py
+[22.119s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/launch/display.launch.py
+[22.119s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge/cmd_vel_bridge
+[22.119s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge/odom_bridge
+[22.119s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge/offboard_move_forward
+[22.119s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge/px4_offboard_init
+[22.119s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge/scan_relay
+[22.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/x500_bridge': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_bridge/build --no-deps symlink_data --force
+[22.785s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_offboard', 'pythonpath_develop')
+[22.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/build/px4_offboard/share/px4_offboard/hook/pythonpath_develop.ps1'
+[22.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/px4_offboard' returned '0': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/px4_offboard/build --no-deps symlink_data --force
+[22.797s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/build/px4_offboard/share/px4_offboard/hook/pythonpath_develop.dsv'
+[22.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/build/px4_offboard/share/px4_offboard/hook/pythonpath_develop.sh'
+[22.907s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_offboard' for CMake module files
+[22.908s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_offboard' for CMake config files
+[22.908s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib'
+[22.908s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/bin'
+[22.908s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/pkgconfig/px4_offboard.pc'
+[22.908s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/python3.10/site-packages'
+[22.909s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_offboard', 'pythonpath')
+[22.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/hook/pythonpath.ps1'
+[22.910s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/hook/pythonpath.dsv'
+[22.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/hook/pythonpath.sh'
+[22.911s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/bin'
+[22.911s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_offboard)
+[22.911s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/package.ps1'
+[22.912s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/package.dsv'
+[22.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/package.sh'
+[22.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/package.bash'
+[22.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/px4_offboard/package.zsh'
+[22.914s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/imamalghifary/ws_sensor_combined/install/px4_offboard/share/colcon-core/packages/px4_offboard)
+[22.915s] Level 1:colcon.colcon_core.shell:create_environment_hook('x500_bridge', 'pythonpath_develop')
+[22.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/build/x500_bridge/share/x500_bridge/hook/pythonpath_develop.ps1'
+[22.916s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/build/x500_bridge/share/x500_bridge/hook/pythonpath_develop.dsv'
+[22.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/build/x500_bridge/share/x500_bridge/hook/pythonpath_develop.sh'
+[22.917s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_bridge' for CMake module files
+[22.918s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_bridge' for CMake config files
+[22.918s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib'
+[22.918s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/bin'
+[22.918s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/pkgconfig/x500_bridge.pc'
+[22.919s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/python3.10/site-packages'
+[22.919s] Level 1:colcon.colcon_core.shell:create_environment_hook('x500_bridge', 'pythonpath')
+[22.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/hook/pythonpath.ps1'
+[22.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/x500_bridge' returned '0': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_bridge/build --no-deps symlink_data --force
+[22.975s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/hook/pythonpath.dsv'
+[22.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/hook/pythonpath.sh'
+[22.976s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/bin'
+[22.976s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(x500_bridge)
+[22.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/package.ps1'
+[22.977s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/package.dsv'
+[22.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/package.sh'
+[22.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/package.bash'
+[22.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/package.zsh'
+[22.979s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/colcon-core/packages/x500_bridge)
+[23.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/imamalghifary/ws_sensor_combined/src/px4_ros_com -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imamalghifary/ws_sensor_combined/install/px4_ros_com
+[23.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/px4_ros_com -- -j22 -l22
+[24.147s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/px4_ros_com -- -j22 -l22
+[24.179s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/imamalghifary/ws_sensor_combined/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/imamalghifary/ws_sensor_combined/build/px4_ros_com
+[24.356s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[24.357s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[24.358s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/imamalghifary/ws_sensor_combined/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/imamalghifary/ws_sensor_combined/build/px4_ros_com
+[24.359s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[24.359s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[24.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[24.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[24.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[24.362s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib'
+[24.362s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[24.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[24.363s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[24.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[24.364s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/bin'
+[24.364s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[24.365s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[24.365s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/bin'
+[24.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[24.366s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[24.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[24.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[24.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[24.368s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[24.369s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[24.369s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com' for CMake module files
+[24.369s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com' for CMake config files
+[24.370s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[24.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[24.370s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[24.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[24.371s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib'
+[24.371s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[24.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[24.372s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[24.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[24.373s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/bin'
+[24.373s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[24.373s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib/python3.10/site-packages'
+[24.373s] Level 1:colcon.colcon_core.environment:checking '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/bin'
+[24.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[24.374s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[24.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.sh'
+[24.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.bash'
+[24.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[24.376s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[24.377s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[24.377s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[24.377s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[24.377s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[24.415s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[24.415s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[24.415s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[24.439s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[24.439s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/imamalghifary/ws_sensor_combined/install/local_setup.ps1'
+[24.475s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/imamalghifary/ws_sensor_combined/install/_local_setup_util_ps1.py'
+[24.508s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/imamalghifary/ws_sensor_combined/install/setup.ps1'
+[24.510s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/imamalghifary/ws_sensor_combined/install/local_setup.sh'
+[24.515s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/imamalghifary/ws_sensor_combined/install/_local_setup_util_sh.py'
+[24.516s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/imamalghifary/ws_sensor_combined/install/setup.sh'
+[24.518s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/imamalghifary/ws_sensor_combined/install/local_setup.bash'
+[24.525s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/imamalghifary/ws_sensor_combined/install/setup.bash'
+[24.528s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/imamalghifary/ws_sensor_combined/install/local_setup.zsh'
+[24.529s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/imamalghifary/ws_sensor_combined/install/setup.zsh'

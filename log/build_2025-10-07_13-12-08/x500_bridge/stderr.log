@@ -1,0 +1,2 @@
+/home/imamalghifary/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:311: UserWarning: Unbuilt egg for px4-offboard [unknown version] (/home/imamalghifary/ws_sensor_combined/build/px4_offboard)
+  self.local_index = Environment(self.shadow_path + sys.path)

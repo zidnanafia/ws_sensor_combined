@@ -1,0 +1,25 @@
+[1.700s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/x500_bridge': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_bridge/build --no-deps symlink_data --force
+[2.045s] running develop
+[2.275s] running egg_info
+[2.288s] writing x500_bridge.egg-info/PKG-INFO
+[2.309s] writing dependency_links to x500_bridge.egg-info/dependency_links.txt
+[2.309s] writing entry points to x500_bridge.egg-info/entry_points.txt
+[2.309s] writing requirements to x500_bridge.egg-info/requires.txt
+[2.310s] writing top-level names to x500_bridge.egg-info/top_level.txt
+[2.338s] reading manifest file 'x500_bridge.egg-info/SOURCES.txt'
+[2.375s] writing manifest file 'x500_bridge.egg-info/SOURCES.txt'
+[2.388s] running build_ext
+[2.388s] Creating /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/python3.10/site-packages/x500-bridge.egg-link (link to .)
+[2.389s] Installing cmd_vel_bridge script to /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge
+[2.389s] Installing odom_bridge script to /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge
+[2.389s] Installing offboard_move_forward script to /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge
+[2.389s] Installing px4_offboard_init script to /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge
+[2.389s] Installing scan_relay script to /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge
+[2.389s] 
+[2.389s] Installed /home/imamalghifary/ws_sensor_combined/build/x500_bridge
+[2.389s] running symlink_data
+[2.389s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_bridge/resource/x500_bridge -> /home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/ament_index/resource_index/packages
+[2.389s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_bridge/package.xml -> /home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge
+[2.390s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_bridge/launch/slam_with_px4.launch.py -> /home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/launch
+[2.390s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_bridge/launch/display.launch.py -> /home/imamalghifary/ws_sensor_combined/install/x500_bridge/share/x500_bridge/launch
+[2.553s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/x500_bridge' returned '0': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/x500_description:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_bridge/build --no-deps symlink_data --force

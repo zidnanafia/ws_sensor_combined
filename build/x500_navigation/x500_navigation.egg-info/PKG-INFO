@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: x500-navigation
+Version: 0.0.0
+Summary: Navigation setup for X500 with Nav2 and PX4 odometry bridge
+Maintainer: imamalghifary
+Maintainer-email: imamalghifary@todo.todo
+License: TODO: License declaration

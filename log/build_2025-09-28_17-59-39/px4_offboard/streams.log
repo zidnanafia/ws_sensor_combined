@@ -1,0 +1,29 @@
+[3.184s] Invoking command in '/home/imamalghifary/ws_sensor_combined/src/ROS2_PX4_Offboard_Example/px4_offboard': AMENT_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/python3.10/site-packages:/home/imamalghifary/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/px4_offboard build --build-base /home/imamalghifary/ws_sensor_combined/build/px4_offboard/build install --record /home/imamalghifary/ws_sensor_combined/build/px4_offboard/install.log --single-version-externally-managed install_data
+[3.429s] running egg_info
+[3.436s] writing ../../../build/px4_offboard/px4_offboard.egg-info/PKG-INFO
+[3.493s] writing dependency_links to ../../../build/px4_offboard/px4_offboard.egg-info/dependency_links.txt
+[3.493s] writing entry points to ../../../build/px4_offboard/px4_offboard.egg-info/entry_points.txt
+[3.495s] writing requirements to ../../../build/px4_offboard/px4_offboard.egg-info/requires.txt
+[3.495s] writing top-level names to ../../../build/px4_offboard/px4_offboard.egg-info/top_level.txt
+[3.530s] reading manifest file '../../../build/px4_offboard/px4_offboard.egg-info/SOURCES.txt'
+[3.545s] adding license file 'LICENSE'
+[3.545s] writing manifest file '../../../build/px4_offboard/px4_offboard.egg-info/SOURCES.txt'
+[3.565s] running build
+[3.565s] running build_py
+[3.599s] copying px4_offboard/processes.py -> /home/imamalghifary/ws_sensor_combined/build/px4_offboard/build/lib/px4_offboard
+[3.613s] running install
+[3.616s] running install_lib
+[3.626s] copying /home/imamalghifary/ws_sensor_combined/build/px4_offboard/build/lib/px4_offboard/processes.py -> /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/python3.10/site-packages/px4_offboard
+[3.628s] byte-compiling /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/python3.10/site-packages/px4_offboard/processes.py to processes.cpython-310.pyc
+[3.628s] running install_data
+[3.647s] running install_egg_info
+[3.656s] removing '/home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/python3.10/site-packages/px4_offboard-0.0.0-py3.10.egg-info' (and everything under it)
+[3.656s] Copying ../../../build/px4_offboard/px4_offboard.egg-info to /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/python3.10/site-packages/px4_offboard-0.0.0-py3.10.egg-info
+[3.714s] running install_scripts
+[3.751s] Installing control script to /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/px4_offboard
+[3.755s] Installing offboard_control script to /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/px4_offboard
+[3.755s] Installing processes script to /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/px4_offboard
+[3.755s] Installing velocity_control script to /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/px4_offboard
+[3.755s] Installing visualizer script to /home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/px4_offboard
+[3.755s] writing list of installed files to '/home/imamalghifary/ws_sensor_combined/build/px4_offboard/install.log'
+[3.787s] Invoked command in '/home/imamalghifary/ws_sensor_combined/src/ROS2_PX4_Offboard_Example/px4_offboard' returned '0': AMENT_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/px4_offboard/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/px4_offboard/lib/python3.10/site-packages:/home/imamalghifary/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/px4_offboard build --build-base /home/imamalghifary/ws_sensor_combined/build/px4_offboard/build install --record /home/imamalghifary/ws_sensor_combined/build/px4_offboard/install.log --single-version-externally-managed install_data

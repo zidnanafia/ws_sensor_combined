@@ -1,0 +1,12 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/launch/display.launch.py
+-- Up-to-date symlink: /home/imamalghifary/ws_sensor_combined/install/x500_description/share/x500_description/urdf/x500_lidar.urdf.xacro
+[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+  ament_cmake_symlink_install_directory() can't find
+  '/home/imamalghifary/ws_sensor_combined/src/x500_description/rviz'
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:46 (include)
+
+[0m

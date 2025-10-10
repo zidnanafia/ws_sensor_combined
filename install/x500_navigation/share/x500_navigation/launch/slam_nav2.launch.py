@@ -1,0 +1,1 @@
+/home/imamalghifary/ws_sensor_combined/build/x500_navigation/launch/slam_nav2.launch.py

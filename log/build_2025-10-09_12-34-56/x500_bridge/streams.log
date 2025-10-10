@@ -1,0 +1,18 @@
+[2.943s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/x500_bridge': AMENT_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/python3.10/site-packages:/home/imamalghifary/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_bridge/build --no-deps symlink_data
+[3.506s] running develop
+[3.847s] running egg_info
+[3.865s] writing x500_bridge.egg-info/PKG-INFO
+[3.866s] writing dependency_links to x500_bridge.egg-info/dependency_links.txt
+[3.866s] writing entry points to x500_bridge.egg-info/entry_points.txt
+[3.866s] writing requirements to x500_bridge.egg-info/requires.txt
+[3.866s] writing top-level names to x500_bridge.egg-info/top_level.txt
+[3.903s] reading manifest file 'x500_bridge.egg-info/SOURCES.txt'
+[3.904s] writing manifest file 'x500_bridge.egg-info/SOURCES.txt'
+[3.929s] running build_ext
+[3.929s] Creating /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/python3.10/site-packages/x500-bridge.egg-link (link to .)
+[3.930s] Installing odom_bridge script to /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge
+[3.930s] Installing scan_relay script to /home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/x500_bridge
+[3.930s] 
+[3.930s] Installed /home/imamalghifary/ws_sensor_combined/build/x500_bridge
+[3.931s] running symlink_data
+[3.997s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/x500_bridge' returned '0': AMENT_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_bridge/lib/python3.10/site-packages:/home/imamalghifary/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_bridge/build --no-deps symlink_data

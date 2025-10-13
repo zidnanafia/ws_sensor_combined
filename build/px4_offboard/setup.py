@@ -1,1 +1,0 @@
-/home/imamalghifary/ws_sensor_combined/src/ROS2_PX4_Offboard_Example/px4_offboard/setup.py

@@ -30,7 +30,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'odom_bridge_2d = x500_navigation.scripts.odom_bridge_2d:main',
+            'cmd_vel_to_offboard = scripts.cmd_vel_to_offboard:main',
         ],
     },
 )

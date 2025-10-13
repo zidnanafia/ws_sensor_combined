@@ -1,0 +1,21 @@
+[0.790s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/px4_msgs -- -j22 -l22
+[5.562s] [  0%] Built target ament_cmake_python_symlink_px4_msgs
+[6.111s] running egg_info
+[6.123s] writing px4_msgs.egg-info/PKG-INFO
+[6.147s] writing dependency_links to px4_msgs.egg-info/dependency_links.txt
+[6.147s] writing top-level names to px4_msgs.egg-info/top_level.txt
+[6.184s] reading manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[6.263s] writing manifest file 'px4_msgs.egg-info/SOURCES.txt'
+[6.342s] [  0%] Built target ament_cmake_python_build_px4_msgs_egg
+[6.343s] [  0%] Built target px4_msgs__cpp
+[7.805s] [ 12%] Built target px4_msgs__rosidl_generator_c
+[9.775s] gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:6007: CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend] Interrupt
+[9.775s] gmake[1]: *** [CMakeFiles/Makefile2:238: CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c.dir/all] Interrupt
+[9.775s] gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/px4_msgs__rosidl_typesupport_c.dir/all] Interrupt
+[9.775s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+[9.775s] gmake[1]: *** [CMakeFiles/Makefile2:290: CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+[9.823s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/px4_msgs__rosidl_typesupport_cpp.dir/all] Interrupt
+[9.845s] gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/build.make:6007: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/depend] Interrupt
+[9.845s] gmake[1]: *** [CMakeFiles/Makefile2:316: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c.dir/all] Interrupt
+[9.845s] gmake: *** [Makefile:146: all] Interrupt
+[9.848s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/px4_msgs' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/px4_msgs -- -j22 -l22

@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'odom_bridge = x500_bridge.odom_bridge:main',
             'scan_relay = x500_bridge.scan_relay:main',
+            'cmd_vel_to_offboard = x500_bridge.cmd_vel_to_offboard:main'
         ],
     },
 )

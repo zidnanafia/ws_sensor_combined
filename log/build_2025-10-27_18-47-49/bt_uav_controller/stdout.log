@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target bt_uav_controller[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable bt_uav_controller[0m
+[100%] Built target bt_uav_controller
+-- Install configuration: ""
+-- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/bt_uav_controller/bt_uav_controller
+-- Set runtime path of "/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/bt_uav_controller/bt_uav_controller" to ""
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/ament_index/resource_index/package_run_dependencies/bt_uav_controller
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/ament_index/resource_index/parent_prefix_path/bt_uav_controller
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/path.sh
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/path.dsv
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.bash
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.sh
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.zsh
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.dsv
+-- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/package.dsv
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/ament_index/resource_index/packages/bt_uav_controller
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controllerConfig.cmake
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controllerConfig-version.cmake
+-- Up-to-date: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/package.xml

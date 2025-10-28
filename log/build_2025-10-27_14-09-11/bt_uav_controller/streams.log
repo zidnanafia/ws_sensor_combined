@@ -1,0 +1,19 @@
+[0.022s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller -- -j22 -l22
+[0.069s] [35m[1mConsolidate compiler generated dependencies of target bt_uav_controller[0m
+[0.182s] [ 50%] [32mBuilding CXX object CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o[0m
+[4.884s] [01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.884s] [01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:183:52:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kshared_ptr<[01;32m[Krclcpp::Node[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[KBT::Blackboard[m[K>[m[K’
+[4.884s]   183 | o tree = factory.createTreeFromText(xml_tree, [01;31m[Knode[m[K);
+[4.884s]       |                                               [01;31m[K^~~~[m[K
+[4.885s]       |                                               [01;31m[K|[m[K
+[4.885s]       |                                               [01;31m[Kshared_ptr<rclcpp::Node>[m[K
+[4.885s] 
+[4.885s] In file included from [01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:3[m[K:
+[4.885s] [01m[K/opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h:476:43:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[KBT::Tree BT::BehaviorTreeFactory::createTreeFromText(const string&, BT::Blackboard::Ptr)[m[K’
+[4.886s]   476 |                          [01;36m[KBlackboard::Ptr blackboard = Blackboard::create()[m[K);
+[4.886s]       |                          [01;36m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.886s] 
+[8.951s] gmake[2]: *** [CMakeFiles/bt_uav_controller.dir/build.make:76: CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o] Error 1
+[8.952s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_uav_controller.dir/all] Error 2
+[8.952s] gmake: *** [Makefile:146: all] Error 2
+[8.955s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller -- -j22 -l22

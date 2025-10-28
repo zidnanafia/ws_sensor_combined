@@ -20,7 +20,7 @@ def generate_launch_description():
     # === Arguments ===
     map_file = LaunchConfiguration(
         'map',
-        default=os.path.join(pkg_x500_nav, 'maps', 'navigation_map.yaml')
+        default=os.path.join(pkg_x500_nav, 'maps', 'navigation_map3.yaml')
     )
 
     params_file = LaunchConfiguration(
@@ -76,7 +76,17 @@ def generate_launch_description():
         package='x500_navigation',
         executable='cmd_vel_to_offboard',
         name='cmd_vel_to_offboard',
-        output='screen'
+        output='screen',
+        parameters=[{'use_sim_time' : use_sim_time}],
+    )
+
+
+    nav2_goal_monitor = Node(
+        package='x500_navigation',
+        executable='nav2_goal_monitor',
+        name='nav2_goal_monitor',
+        output='screen',
+        parameters=[{'use_sim_time' : use_sim_time}],
     )
 
 
@@ -87,7 +97,8 @@ def generate_launch_description():
         LogInfo(msg="🚀 Launching X500 Navigation Stack with simulated time..."),
         delayed_nav2_bringup,
         rviz,
+        nav2_goal_monitor,
         # Uncomment if you want the /cmd_vel bridge active:
         # cmd_vel_bridge,
-        # cmd_vel_to_offboard,
+        cmd_vel_to_offboard,
     ])

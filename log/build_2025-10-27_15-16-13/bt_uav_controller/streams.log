@@ -1,0 +1,15 @@
+[0.026s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller -- -j22 -l22
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target bt_uav_controller[0m
+[0.115s] [ 33%] [32mBuilding CXX object CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o[0m
+[7.518s] In file included from [01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:3[m[K:
+[7.519s] /opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&) [with T = Arm; std::string = std::__cxx11::basic_string<char>][m[K’:
+[7.519s] [01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:333:32:[m[K   required from here
+[7.519s] [01m[K/opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h:399:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:   PortsList providedPorts();
+[7.519s] 
+[7.519s]   399 |     static_assert([01;31m[K!(param_constructable && !has_static_ports_list)[m[K, "[registerNode]: you "
+[7.519s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.519s] [01m[K/opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h:399:19:[m[K [01;36m[Knote: [m[K‘[01m[K((!(bool)param_constructable) || ((bool)has_static_ports_list))[m[K’ evaluates to false
+[13.368s] gmake[2]: *** [CMakeFiles/bt_uav_controller.dir/build.make:76: CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o] Error 1
+[13.368s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_uav_controller.dir/all] Error 2
+[13.368s] gmake: *** [Makefile:146: all] Error 2
+[13.372s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller -- -j22 -l22

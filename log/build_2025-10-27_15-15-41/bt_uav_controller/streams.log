@@ -1,0 +1,42 @@
+[0.027s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller -- -j22 -l22
+[0.124s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.625s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.962s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.987s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.006s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.068s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.134s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.354s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.389s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.757s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.242s] -- Found nav2_behavior_tree: 1.1.19 (/opt/ros/humble/share/nav2_behavior_tree/cmake)
+[3.488s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.493s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.678s] -- Found px4_msgs: 2.0.1 (/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake)
+[3.759s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.119s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.119s] -- Configured cppcheck include dirs: /home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/include
+[4.119s] -- Configured cppcheck exclude dirs and/or files: 
+[4.120s] -- Added test 'lint_cmake' to check CMake code style
+[4.132s] -- Added test 'uncrustify' to check C / C++ code style
+[4.132s] -- Configured uncrustify additional arguments: 
+[4.132s] -- Added test 'xmllint' to check XML markup files
+[4.132s] -- Configuring done
+[4.524s] -- Generating done
+[4.538s] -- Build files have been written to: /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller
+[4.607s] [35m[1mConsolidate compiler generated dependencies of target bt_uav_controller[0m
+[4.648s] [ 66%] [32mBuilding CXX object CMakeFiles/bt_uav_controller.dir/src/px4_state_monitor.cpp.o[0m
+[4.648s] [ 66%] [32mBuilding CXX object CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o[0m
+[12.624s] In file included from [01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:3[m[K:
+[12.624s] /opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&) [with T = Arm; std::string = std::__cxx11::basic_string<char>][m[K’:
+[12.624s] [01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:333:32:[m[K   required from here
+[12.624s] [01m[K/opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h:399:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:   PortsList providedPorts();
+[12.625s] 
+[12.625s]   399 |     static_assert([01;31m[K!(param_constructable && !has_static_ports_list)[m[K, "[registerNode]: you "
+[12.625s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.625s] [01m[K/opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h:399:19:[m[K [01;36m[Knote: [m[K‘[01m[K((!(bool)param_constructable) || ((bool)has_static_ports_list))[m[K’ evaluates to false
+[17.784s] gmake[2]: *** [CMakeFiles/bt_uav_controller.dir/build.make:76: CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o] Error 1
+[17.784s] gmake[2]: *** Waiting for unfinished jobs....
+[24.347s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_uav_controller.dir/all] Error 2
+[24.348s] gmake: *** [Makefile:146: all] Error 2
+[24.351s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller -- -j22 -l22

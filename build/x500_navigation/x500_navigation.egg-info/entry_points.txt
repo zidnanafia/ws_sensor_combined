@@ -1,2 +1,9 @@
 [console_scripts]
-cmd_vel_to_offboard = scripts.cmd_vel_to_offboard:main
+bt_change_altitude = x500_navigation.bt_change_altitude:main
+bt_land = x500_navigation.bt_land:main
+bt_set_offboard = x500_navigation.bt_stop_offboard:main
+bt_stop_offboard = x500_navigation.bt_stop_offboard:main
+bt_takeoff = x500_navigation.bt_takeoff:main
+cmd_vel_to_offboard = x500_navigation.cmd_vel_to_offboard:main
+nav2_goal_monitor = x500_navigation.nav2_goal_monitor:main
+send_waypoints = x500_navigation.send_waypoints:main

@@ -1,0 +1,11 @@
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <Sequence name="UAVWaypointMission">
+      <Takeoff target_altitude="2.0"/>
+      <FollowWaypoints waypoints="{waypoints}" controller_id="FollowPath"/>
+      <ChangeAltitude delta_altitude="-0.5"/>
+      <StopOffboard/>
+      <Land/>
+    </Sequence>
+  </BehaviorTree>
+</root>

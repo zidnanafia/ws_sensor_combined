@@ -8,10 +8,14 @@ setup.py
 ../../build/x500_navigation/x500_navigation.egg-info/requires.txt
 ../../build/x500_navigation/x500_navigation.egg-info/top_level.txt
 ../../build/x500_navigation/x500_navigation.egg-info/zip-safe
+behavior_trees/simple_uav_test.xml
 launch/slam_nav2.launch.py
 launch/x500_nav_bringup.launch.py
 maps/navigation_map2.pgm
 maps/navigation_map2.yaml
+maps/navigation_map3.pgm
+maps/navigation_map3.yaml
+params/nav2_bt_navigator.yaml
 params/nav2_params.yaml
 resource/x500_navigation
 rviz/x500_nav.rviz
@@ -19,3 +23,6 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 x500_navigation/__init__.py
+x500_navigation/cmd_vel_to_offboard.py
+x500_navigation/nav2_goal_monitor.py
+x500_navigation/send_waypoints.py

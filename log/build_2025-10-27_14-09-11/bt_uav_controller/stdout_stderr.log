@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target bt_uav_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o[0m
+[01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:183:52:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kshared_ptr<[01;32m[Krclcpp::Node[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[KBT::Blackboard[m[K>[m[K’
+  183 | o tree = factory.createTreeFromText(xml_tree, [01;31m[Knode[m[K);
+      |                                               [01;31m[K^~~~[m[K
+      |                                               [01;31m[K|[m[K
+      |                                               [01;31m[Kshared_ptr<rclcpp::Node>[m[K
+
+In file included from [01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h:476:43:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[KBT::Tree BT::BehaviorTreeFactory::createTreeFromText(const string&, BT::Blackboard::Ptr)[m[K’
+  476 |                          [01;36m[KBlackboard::Ptr blackboard = Blackboard::create()[m[K);
+      |                          [01;36m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/bt_uav_controller.dir/build.make:76: CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_uav_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

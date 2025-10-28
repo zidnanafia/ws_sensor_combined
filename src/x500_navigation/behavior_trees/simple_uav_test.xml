@@ -1,0 +1,23 @@
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+
+    <Sequence name="UAVMission">
+
+      <!-- Takeoff sequence -->
+      <LogInfo message="🛫 Takeoff sequence initiated"/>
+      <RunNode node_name="bt_takeoff"/>
+      <Wait seconds="5"/>
+
+      <!-- Navigate to target -->
+      <LogInfo message="🚀 Navigating to target"/>
+      <NavigateToPose goal="{goal}" path="{path}"/>
+
+      <!-- Landing sequence -->
+      <LogInfo message="🛬 Landing sequence initiated"/>
+      <RunNode node_name="bt_land"/>
+      <Wait seconds="5"/>
+
+    </Sequence>
+
+  </BehaviorTree>
+</root>

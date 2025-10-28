@@ -1,0 +1,11 @@
+In file included from [01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:3[m[K:
+/opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::registerNodeType(const string&) [with T = Arm; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:333:32:[m[K   required from here
+[01m[K/opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h:399:19:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: you MUST implement the static method:   PortsList providedPorts();
+
+  399 |     static_assert([01;31m[K!(param_constructable && !has_static_ports_list)[m[K, "[registerNode]: you "
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/behaviortree_cpp_v3/bt_factory.h:399:19:[m[K [01;36m[Knote: [m[K‘[01m[K((!(bool)param_constructable) || ((bool)has_static_ports_list))[m[K’ evaluates to false
+gmake[2]: *** [CMakeFiles/bt_uav_controller.dir/build.make:76: CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_uav_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

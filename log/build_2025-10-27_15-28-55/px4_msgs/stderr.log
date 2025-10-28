@@ -1,0 +1,5 @@
+gmake[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/px4_msgs__cpp.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:446: CMakeFiles/ament_cmake_python_build_px4_msgs_egg.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_generator_c.dir/build.make:8841: CMakeFiles/px4_msgs__rosidl_generator_c.dir/depend] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/px4_msgs__rosidl_generator_c.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

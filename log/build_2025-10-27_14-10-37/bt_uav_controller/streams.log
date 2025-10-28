@@ -1,0 +1,26 @@
+[0.020s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller -- -j22 -l22
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target bt_uav_controller[0m
+[0.093s] [ 50%] [32mBuilding CXX object CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o[0m
+[13.686s] [100%] [32m[1mLinking CXX executable bt_uav_controller[0m
+[14.712s] [100%] Built target bt_uav_controller
+[14.723s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller -- -j22 -l22
+[14.726s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller
+[14.734s] -- Install configuration: ""
+[14.735s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/bt_uav_controller/bt_uav_controller
+[14.738s] -- Set runtime path of "/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/bt_uav_controller/bt_uav_controller" to ""
+[14.738s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/ament_index/resource_index/package_run_dependencies/bt_uav_controller
+[14.738s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/ament_index/resource_index/parent_prefix_path/bt_uav_controller
+[14.738s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/ament_prefix_path.sh
+[14.739s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/ament_prefix_path.dsv
+[14.739s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/path.sh
+[14.740s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/path.dsv
+[14.740s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.bash
+[14.740s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.sh
+[14.741s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.zsh
+[14.741s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.dsv
+[14.741s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/package.dsv
+[14.741s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/ament_index/resource_index/packages/bt_uav_controller
+[14.741s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controllerConfig.cmake
+[14.741s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controllerConfig-version.cmake
+[14.741s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/package.xml
+[14.743s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble /usr/bin/cmake --install /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller

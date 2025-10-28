@@ -1,0 +1,34 @@
+[1.340s] Invoking command in '/home/imamalghifary/ws_sensor_combined/src/x500_navigation': PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/x500_navigation build --build-base /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build install --record /home/imamalghifary/ws_sensor_combined/build/x500_navigation/install.log --single-version-externally-managed install_data
+[1.781s] running egg_info
+[1.804s] writing ../../build/x500_navigation/x500_navigation.egg-info/PKG-INFO
+[1.804s] writing dependency_links to ../../build/x500_navigation/x500_navigation.egg-info/dependency_links.txt
+[1.804s] writing entry points to ../../build/x500_navigation/x500_navigation.egg-info/entry_points.txt
+[1.824s] writing requirements to ../../build/x500_navigation/x500_navigation.egg-info/requires.txt
+[1.850s] writing top-level names to ../../build/x500_navigation/x500_navigation.egg-info/top_level.txt
+[1.904s] reading manifest file '../../build/x500_navigation/x500_navigation.egg-info/SOURCES.txt'
+[1.906s] writing manifest file '../../build/x500_navigation/x500_navigation.egg-info/SOURCES.txt'
+[1.906s] running build
+[1.906s] running build_py
+[1.906s] copying x500_navigation/bt_takeoff.py -> /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build/lib/x500_navigation
+[1.907s] copying x500_navigation/bt_set_offboard.py -> /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build/lib/x500_navigation
+[1.907s] running install
+[1.916s] running install_lib
+[1.940s] copying /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build/lib/x500_navigation/bt_takeoff.py -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages/x500_navigation
+[1.953s] copying /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build/lib/x500_navigation/bt_set_offboard.py -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages/x500_navigation
+[1.954s] byte-compiling /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages/x500_navigation/bt_takeoff.py to bt_takeoff.cpython-310.pyc
+[1.977s] byte-compiling /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages/x500_navigation/bt_set_offboard.py to bt_set_offboard.cpython-310.pyc
+[1.978s] running install_data
+[1.978s] copying behavior_trees/simple_uav_test.xml -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/behavior_trees
+[1.978s] running install_egg_info
+[2.005s] removing '/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages/x500_navigation-0.0.0-py3.10.egg-info' (and everything under it)
+[2.005s] Copying ../../build/x500_navigation/x500_navigation.egg-info to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages/x500_navigation-0.0.0-py3.10.egg-info
+[2.006s] running install_scripts
+[2.111s] Installing bt_change_altitude script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[2.111s] Installing bt_land script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[2.112s] Installing bt_set_offboard script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[2.145s] Installing bt_stop_offboard script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[2.145s] Installing bt_takeoff script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[2.145s] Installing cmd_vel_to_offboard script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[2.146s] Installing send_waypoints script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[2.146s] writing list of installed files to '/home/imamalghifary/ws_sensor_combined/build/x500_navigation/install.log'
+[2.215s] Invoked command in '/home/imamalghifary/ws_sensor_combined/src/x500_navigation' returned '0': PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/x500_navigation build --build-base /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build install --record /home/imamalghifary/ws_sensor_combined/build/x500_navigation/install.log --single-version-externally-managed install_data

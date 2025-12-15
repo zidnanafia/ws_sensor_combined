@@ -92,13 +92,11 @@ class NeuralControl(metaclass=Metaclass_NeuralControl):
         if 'observation' not in kwargs:
             self.observation = numpy.zeros(15, dtype=numpy.float32)
         else:
-            self.observation = numpy.array(kwargs.get('observation'), dtype=numpy.float32)
-            assert self.observation.shape == (15, )
+            self.observation = kwargs.get('observation')
         if 'network_output' not in kwargs:
             self.network_output = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.network_output = numpy.array(kwargs.get('network_output'), dtype=numpy.float32)
-            assert self.network_output.shape == (4, )
+            self.network_output = kwargs.get('network_output')
         self.controller_time = kwargs.get('controller_time', int())
         self.inference_time = kwargs.get('inference_time', int())
 

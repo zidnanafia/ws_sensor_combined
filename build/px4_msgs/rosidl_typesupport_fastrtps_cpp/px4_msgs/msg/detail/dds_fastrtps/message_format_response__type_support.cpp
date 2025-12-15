@@ -75,7 +75,7 @@ cdr_deserialize(
   cdr >> ros_message.message_hash;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_px4_msgs

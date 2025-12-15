@@ -85,8 +85,7 @@ class DebugKeyValue(metaclass=Metaclass_DebugKeyValue):
         if 'key' not in kwargs:
             self.key = numpy.zeros(10, dtype=numpy.uint8)
         else:
-            self.key = numpy.array(kwargs.get('key'), dtype=numpy.uint8)
-            assert self.key.shape == (10, )
+            self.key = kwargs.get('key')
         self.value = kwargs.get('value', float())
 
     def __repr__(self):

@@ -98,8 +98,7 @@ class QshellReq(metaclass=Metaclass_QshellReq):
         if 'cmd' not in kwargs:
             self.cmd = numpy.zeros(100, dtype=numpy.uint8)
         else:
-            self.cmd = numpy.array(kwargs.get('cmd'), dtype=numpy.uint8)
-            assert self.cmd.shape == (100, )
+            self.cmd = kwargs.get('cmd')
         self.strlen = kwargs.get('strlen', int())
         self.request_sequence = kwargs.get('request_sequence', int())
 

@@ -143,42 +143,36 @@ class EstimatorSensorBias(metaclass=Metaclass_EstimatorSensorBias):
         if 'gyro_bias' not in kwargs:
             self.gyro_bias = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.gyro_bias = numpy.array(kwargs.get('gyro_bias'), dtype=numpy.float32)
-            assert self.gyro_bias.shape == (3, )
+            self.gyro_bias = kwargs.get('gyro_bias')
         self.gyro_bias_limit = kwargs.get('gyro_bias_limit', float())
         if 'gyro_bias_variance' not in kwargs:
             self.gyro_bias_variance = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.gyro_bias_variance = numpy.array(kwargs.get('gyro_bias_variance'), dtype=numpy.float32)
-            assert self.gyro_bias_variance.shape == (3, )
+            self.gyro_bias_variance = kwargs.get('gyro_bias_variance')
         self.gyro_bias_valid = kwargs.get('gyro_bias_valid', bool())
         self.gyro_bias_stable = kwargs.get('gyro_bias_stable', bool())
         self.accel_device_id = kwargs.get('accel_device_id', int())
         if 'accel_bias' not in kwargs:
             self.accel_bias = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.accel_bias = numpy.array(kwargs.get('accel_bias'), dtype=numpy.float32)
-            assert self.accel_bias.shape == (3, )
+            self.accel_bias = kwargs.get('accel_bias')
         self.accel_bias_limit = kwargs.get('accel_bias_limit', float())
         if 'accel_bias_variance' not in kwargs:
             self.accel_bias_variance = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.accel_bias_variance = numpy.array(kwargs.get('accel_bias_variance'), dtype=numpy.float32)
-            assert self.accel_bias_variance.shape == (3, )
+            self.accel_bias_variance = kwargs.get('accel_bias_variance')
         self.accel_bias_valid = kwargs.get('accel_bias_valid', bool())
         self.accel_bias_stable = kwargs.get('accel_bias_stable', bool())
         self.mag_device_id = kwargs.get('mag_device_id', int())
         if 'mag_bias' not in kwargs:
             self.mag_bias = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.mag_bias = numpy.array(kwargs.get('mag_bias'), dtype=numpy.float32)
-            assert self.mag_bias.shape == (3, )
+            self.mag_bias = kwargs.get('mag_bias')
         self.mag_bias_limit = kwargs.get('mag_bias_limit', float())
         if 'mag_bias_variance' not in kwargs:
             self.mag_bias_variance = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.mag_bias_variance = numpy.array(kwargs.get('mag_bias_variance'), dtype=numpy.float32)
-            assert self.mag_bias_variance.shape == (3, )
+            self.mag_bias_variance = kwargs.get('mag_bias_variance')
         self.mag_bias_valid = kwargs.get('mag_bias_valid', bool())
         self.mag_bias_stable = kwargs.get('mag_bias_stable', bool())
 

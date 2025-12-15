@@ -1,0 +1,249 @@
+[0.014s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/imamalghifary/ws_sensor_combined/src/bt_uav_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller
+[0.408s] -- The C compiler identification is GNU 11.4.0
+[0.408s] -- The CXX compiler identification is GNU 11.4.0
+[0.408s] -- Detecting C compiler ABI info
+[0.408s] -- Detecting C compiler ABI info - done
+[0.408s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.408s] -- Detecting C compile features
+[0.409s] -- Detecting C compile features - done
+[0.409s] -- Detecting CXX compiler ABI info
+[0.409s] -- Detecting CXX compiler ABI info - done
+[0.409s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.409s] -- Detecting CXX compile features
+[0.409s] -- Detecting CXX compile features - done
+[0.409s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.068s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.120s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.209s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[1.277s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.281s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.289s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.301s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.316s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.382s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.384s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.690s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.715s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.749s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.766s] -- Looking for pthread.h
+[1.861s] -- Looking for pthread.h - found
+[1.861s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.926s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.927s] -- Found Threads: TRUE  
+[1.984s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[2.050s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.100s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.121s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.237s] -- Found px4_msgs: 2.0.1 (/home/imamalghifary/ws_sensor_combined/install/px4_msgs/share/px4_msgs/cmake)
+[2.296s] -- Found nav2_msgs: 1.1.19 (/opt/ros/humble/share/nav2_msgs/cmake)
+[2.339s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.649s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.055s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.219s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.240s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.242s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.275s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.275s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.275s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.275s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.297s] -- Found PythonExtra: .so  
+[3.354s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[3.354s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[3.354s]   rosidl_target_interfaces()
+[3.354s] Call Stack (most recent call first):
+[3.354s]   CMakeLists.txt:50 (rosidl_target_interfaces)
+[3.354s] 
+[3.354s] [0m
+[3.355s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[3.355s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[3.355s]   rosidl_target_interfaces()
+[3.355s] Call Stack (most recent call first):
+[3.355s]   CMakeLists.txt:65 (rosidl_target_interfaces)
+[3.355s] 
+[3.355s] [0m
+[3.357s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.381s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.382s] -- Configured cppcheck include dirs: /home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/include
+[3.382s] -- Configured cppcheck exclude dirs and/or files: 
+[3.383s] -- Added test 'lint_cmake' to check CMake code style
+[3.384s] -- Added test 'uncrustify' to check C / C++ code style
+[3.384s] -- Configured uncrustify additional arguments: 
+[3.385s] -- Added test 'xmllint' to check XML markup files
+[3.388s] -- Configuring done
+[3.440s] -- Generating done
+[3.459s] -- Build files have been written to: /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller
+[3.484s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller' returned '0': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/imamalghifary/ws_sensor_combined/src/bt_uav_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller
+[3.485s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller -- -j22 -l22
+[3.532s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.543s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.552s] [  5%] Built target ament_cmake_python_symlink_bt_uav_controller
+[4.053s] running egg_info
+[4.054s] creating bt_uav_controller.egg-info
+[4.071s] writing bt_uav_controller.egg-info/PKG-INFO
+[4.071s] writing dependency_links to bt_uav_controller.egg-info/dependency_links.txt
+[4.071s] writing top-level names to bt_uav_controller.egg-info/top_level.txt
+[4.071s] writing manifest file 'bt_uav_controller.egg-info/SOURCES.txt'
+[4.129s] reading manifest file 'bt_uav_controller.egg-info/SOURCES.txt'
+[4.130s] writing manifest file 'bt_uav_controller.egg-info/SOURCES.txt'
+[4.170s] [  5%] Built target bt_uav_controller__cpp
+[4.182s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.182s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.182s] [ 13%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.220s] [ 13%] Built target ament_cmake_python_build_bt_uav_controller_egg
+[4.278s] [ 16%] [32mBuilding C object CMakeFiles/bt_uav_controller__rosidl_generator_c.dir/rosidl_generator_c/bt_uav_controller/action/detail/takeoff__functions.c.o[0m
+[4.447s] [ 18%] [32m[1mLinking C shared library libbt_uav_controller__rosidl_generator_c.so[0m
+[4.497s] [ 18%] Built target bt_uav_controller__rosidl_generator_c
+[4.509s] [ 24%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.509s] [ 24%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.516s] [ 27%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.618s] [ 29%] [32mBuilding CXX object CMakeFiles/bt_uav_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bt_uav_controller/action/takeoff__type_support.cpp.o[0m
+[4.665s] [ 32%] [32mBuilding CXX object CMakeFiles/bt_uav_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bt_uav_controller/action/detail/takeoff__type_support.cpp.o[0m
+[4.722s] [ 35%] [32mBuilding CXX object CMakeFiles/bt_uav_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bt_uav_controller/action/detail/dds_fastrtps/takeoff__type_support.cpp.o[0m
+[4.976s] [ 37%] [32mBuilding CXX object CMakeFiles/bt_uav_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/bt_uav_controller/action/takeoff__type_support.cpp.o[0m
+[5.034s] [ 40%] [32m[1mLinking CXX shared library libbt_uav_controller__rosidl_typesupport_c.so[0m
+[5.068s] [ 43%] [32mBuilding C object CMakeFiles/bt_uav_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bt_uav_controller/action/detail/takeoff__type_support.c.o[0m
+[5.085s] [ 43%] Built target bt_uav_controller__rosidl_typesupport_c
+[5.165s] [ 45%] [32m[1mLinking C shared library libbt_uav_controller__rosidl_typesupport_introspection_c.so[0m
+[5.166s] [ 48%] [32mBuilding CXX object CMakeFiles/bt_uav_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/bt_uav_controller/action/detail/takeoff__type_support_c.cpp.o[0m
+[5.215s] [ 48%] Built target bt_uav_controller__rosidl_typesupport_introspection_c
+[5.252s] [ 51%] [32m[1mLinking CXX shared library libbt_uav_controller__rosidl_typesupport_cpp.so[0m
+[5.330s] [ 51%] Built target bt_uav_controller__rosidl_typesupport_cpp
+[5.487s] [ 54%] [32m[1mLinking CXX shared library libbt_uav_controller__rosidl_typesupport_introspection_cpp.so[0m
+[5.565s] [ 54%] Built target bt_uav_controller__rosidl_typesupport_introspection_cpp
+[5.566s] [ 56%] [32m[1mLinking CXX shared library libbt_uav_controller__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.697s] [ 56%] Built target bt_uav_controller__rosidl_typesupport_fastrtps_cpp
+[5.875s] [ 59%] [32m[1mLinking CXX shared library libbt_uav_controller__rosidl_typesupport_fastrtps_c.so[0m
+[5.957s] [ 59%] Built target bt_uav_controller__rosidl_typesupport_fastrtps_c
+[5.975s] [ 59%] Built target bt_uav_controller
+[5.997s] [ 62%] [32mBuilding CXX object CMakeFiles/bt_uav_controller_node.dir/src/bt_uav_controller.cpp.o[0m
+[5.997s] [ 64%] [32mBuilding CXX object CMakeFiles/takeoff_action_server.dir/src/takeoff_action_server.cpp.o[0m
+[5.999s] [ 67%] [32mBuilding CXX object CMakeFiles/bt_uav_controller_node.dir/src/px4_state_monitor.cpp.o[0m
+[6.000s] [ 70%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.005s] [ 72%] [32mBuilding CXX object CMakeFiles/takeoff_action_server.dir/src/px4_state_monitor.cpp.o[0m
+[7.124s] [ 72%] Built target bt_uav_controller__py
+[7.162s] [ 75%] [32mBuilding C object CMakeFiles/bt_uav_controller__rosidl_generator_py.dir/rosidl_generator_py/bt_uav_controller/action/_takeoff_s.c.o[0m
+[7.509s] [ 78%] [32m[1mLinking C shared library rosidl_generator_py/bt_uav_controller/libbt_uav_controller__rosidl_generator_py.so[0m
+[7.593s] [ 78%] Built target bt_uav_controller__rosidl_generator_py
+[7.619s] [ 81%] [32mBuilding C object CMakeFiles/bt_uav_controller__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/bt_uav_controller/_bt_uav_controller_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.620s] [ 83%] [32mBuilding C object CMakeFiles/bt_uav_controller__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/bt_uav_controller/_bt_uav_controller_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.624s] [ 86%] [32mBuilding C object CMakeFiles/bt_uav_controller__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/bt_uav_controller/_bt_uav_controller_s.ep.rosidl_typesupport_c.c.o[0m
+[7.818s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/bt_uav_controller/bt_uav_controller_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.870s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/bt_uav_controller/bt_uav_controller_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.877s] [ 91%] Built target bt_uav_controller__rosidl_typesupport_introspection_c__pyext
+[7.912s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/bt_uav_controller/bt_uav_controller_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.966s] [ 94%] Built target bt_uav_controller__rosidl_typesupport_fastrtps_c__pyext
+[7.969s] [ 94%] Built target bt_uav_controller__rosidl_typesupport_c__pyext
+[20.009s] [ 97%] [32m[1mLinking CXX executable takeoff_action_server[0m
+[20.706s] [ 97%] Built target takeoff_action_server
+[25.591s] [100%] [32m[1mLinking CXX executable bt_uav_controller_node[0m
+[26.645s] [100%] Built target bt_uav_controller_node
+[26.655s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller' returned '0': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller -- -j22 -l22
+[26.657s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller
+[26.661s] -- Install configuration: ""
+[26.662s] -- Execute custom install script
+[26.662s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/ament_index/resource_index/rosidl_interfaces/bt_uav_controller
+[26.667s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/detail/takeoff__functions.h
+[26.671s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/detail/takeoff__struct.h
+[26.678s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/detail/takeoff__type_support.h
+[26.683s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/takeoff.h
+[26.689s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/msg/rosidl_generator_c__visibility_control.h
+[26.695s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/library_path.sh
+[26.700s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/library_path.dsv
+[26.706s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/detail/takeoff__rosidl_typesupport_fastrtps_c.h
+[26.713s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[26.717s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/detail/takeoff__builder.hpp
+[26.721s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/detail/takeoff__struct.hpp
+[26.725s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/detail/takeoff__traits.hpp
+[26.730s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/detail/takeoff__type_support.hpp
+[26.736s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/takeoff.hpp
+[26.740s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/msg/rosidl_generator_cpp__visibility_control.hpp
+[26.748s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/detail/takeoff__rosidl_typesupport_fastrtps_cpp.hpp
+[26.753s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[26.758s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/detail/takeoff__rosidl_typesupport_introspection_c.h
+[26.764s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[26.770s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/include/bt_uav_controller/bt_uav_controller/action/detail/takeoff__rosidl_typesupport_introspection_cpp.hpp
+[26.776s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/pythonpath.sh
+[26.781s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/pythonpath.dsv
+[26.786s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller-0.0.0-py3.10.egg-info/PKG-INFO
+[26.792s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller-0.0.0-py3.10.egg-info/SOURCES.txt
+[26.798s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller-0.0.0-py3.10.egg-info/dependency_links.txt
+[26.804s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller-0.0.0-py3.10.egg-info/top_level.txt
+[26.808s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/__init__.py
+[26.814s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/_bt_uav_controller_s.ep.rosidl_typesupport_c.c
+[26.818s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/_bt_uav_controller_s.ep.rosidl_typesupport_fastrtps_c.c
+[26.823s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/_bt_uav_controller_s.ep.rosidl_typesupport_introspection_c.c
+[26.828s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/action/__init__.py
+[26.834s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/action/_takeoff.py
+[26.840s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/action/_takeoff_s.c
+[26.845s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/bt_uav_controller_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[26.851s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/bt_uav_controller_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[26.856s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/bt_uav_controller_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[26.862s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/libbt_uav_controller__rosidl_generator_py.so
+[26.868s] -- Up-to-date symlink: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/bt_uav_controller_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[26.868s] -- Up-to-date symlink: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/bt_uav_controller_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[26.869s] -- Up-to-date symlink: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/bt_uav_controller_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[26.869s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/action/Takeoff.idl
+[26.875s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/action/Takeoff.action
+[26.881s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/bt_uav_controller/bt_uav_controller_node
+[26.887s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/bt_uav_controller/takeoff_action_server
+[26.892s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/ament_index/resource_index/package_run_dependencies/bt_uav_controller
+[26.897s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/ament_index/resource_index/parent_prefix_path/bt_uav_controller
+[26.903s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/ament_prefix_path.sh
+[26.908s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/ament_prefix_path.dsv
+[26.914s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/path.sh
+[26.919s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/environment/path.dsv
+[26.924s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.bash
+[26.929s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.sh
+[26.934s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.zsh
+[26.940s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/local_setup.dsv
+[26.946s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/package.dsv
+[26.953s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/ament_index/resource_index/packages/bt_uav_controller
+[26.959s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/rosidl_cmake-extras.cmake
+[26.966s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[26.972s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.979s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[26.984s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/ament_cmake_export_targets-extras.cmake
+[26.990s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[26.995s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[27.000s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controllerConfig.cmake
+[27.005s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controllerConfig-version.cmake
+[27.010s] -- Symlinking: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/package.xml
+[27.015s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_generator_c.so
+[27.015s] -- Set runtime path of "/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_generator_c.so" to ""
+[27.016s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_fastrtps_c.so
+[27.016s] -- Set runtime path of "/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_fastrtps_c.so" to ""
+[27.016s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_fastrtps_cpp.so
+[27.016s] -- Set runtime path of "/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_fastrtps_cpp.so" to ""
+[27.016s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_introspection_c.so
+[27.016s] -- Set runtime path of "/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_introspection_c.so" to ""
+[27.016s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_c.so
+[27.016s] -- Set runtime path of "/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_c.so" to ""
+[27.016s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_introspection_cpp.so
+[27.016s] -- Set runtime path of "/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_introspection_cpp.so" to ""
+[27.017s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_cpp.so
+[27.017s] -- Set runtime path of "/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_typesupport_cpp.so" to ""
+[27.055s] Listing '/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller'...
+[27.055s] Compiling '/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/__init__.py'...
+[27.055s] Listing '/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/action'...
+[27.055s] Compiling '/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/action/__init__.py'...
+[27.055s] Compiling '/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/local/lib/python3.10/dist-packages/bt_uav_controller/action/_takeoff.py'...
+[27.059s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_generator_py.so
+[27.059s] -- Set runtime path of "/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib/libbt_uav_controller__rosidl_generator_py.so" to ""
+[27.060s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/export_bt_uav_controller__rosidl_generator_cExport.cmake
+[27.060s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/export_bt_uav_controller__rosidl_generator_cExport-noconfig.cmake
+[27.060s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/export_bt_uav_controller__rosidl_typesupport_fastrtps_cExport.cmake
+[27.060s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/export_bt_uav_controller__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[27.060s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/export_bt_uav_controller__rosidl_generator_cppExport.cmake
+[27.060s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/export_bt_uav_controller__rosidl_typesupport_fastrtps_cppExport.cmake
+[27.060s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/export_bt_uav_controller__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[27.060s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controller__rosidl_typesupport_introspection_cExport.cmake
+[27.061s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controller__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[27.061s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controller__rosidl_typesupport_cExport.cmake
+[27.061s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controller__rosidl_typesupport_cExport-noconfig.cmake
+[27.061s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controller__rosidl_typesupport_introspection_cppExport.cmake
+[27.061s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controller__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[27.061s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controller__rosidl_typesupport_cppExport.cmake
+[27.061s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/bt_uav_controller__rosidl_typesupport_cppExport-noconfig.cmake
+[27.061s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/export_bt_uav_controller__rosidl_generator_pyExport.cmake
+[27.061s] -- Installing: /home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/share/bt_uav_controller/cmake/export_bt_uav_controller__rosidl_generator_pyExport-noconfig.cmake
+[27.063s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller' returned '0': CMAKE_PREFIX_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller:/home/imamalghifary/ws_sensor_combined/install/x500_navigation:/home/imamalghifary/ws_sensor_combined/install/x500_bridge:/home/imamalghifary/ws_sensor_combined/install/px4_offboard:/opt/ros/humble LD_LIBRARY_PATH=/home/imamalghifary/ws_sensor_combined/install/px4_msgs/lib:/home/imamalghifary/ws_sensor_combined/install/px4_ros_com/lib:/home/imamalghifary/ws_sensor_combined/install/bt_uav_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/imamalghifary/ws_sensor_combined/build/bt_uav_controller

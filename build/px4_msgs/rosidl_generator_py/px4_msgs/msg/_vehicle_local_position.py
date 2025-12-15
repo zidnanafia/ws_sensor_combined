@@ -280,8 +280,7 @@ class VehicleLocalPosition(metaclass=Metaclass_VehicleLocalPosition):
         if 'delta_xy' not in kwargs:
             self.delta_xy = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.delta_xy = numpy.array(kwargs.get('delta_xy'), dtype=numpy.float32)
-            assert self.delta_xy.shape == (2, )
+            self.delta_xy = kwargs.get('delta_xy')
         self.xy_reset_counter = kwargs.get('xy_reset_counter', int())
         self.delta_z = kwargs.get('delta_z', float())
         self.z_reset_counter = kwargs.get('z_reset_counter', int())
@@ -292,8 +291,7 @@ class VehicleLocalPosition(metaclass=Metaclass_VehicleLocalPosition):
         if 'delta_vxy' not in kwargs:
             self.delta_vxy = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.delta_vxy = numpy.array(kwargs.get('delta_vxy'), dtype=numpy.float32)
-            assert self.delta_vxy.shape == (2, )
+            self.delta_vxy = kwargs.get('delta_vxy')
         self.vxy_reset_counter = kwargs.get('vxy_reset_counter', int())
         self.delta_vz = kwargs.get('delta_vz', float())
         self.vz_reset_counter = kwargs.get('vz_reset_counter', int())

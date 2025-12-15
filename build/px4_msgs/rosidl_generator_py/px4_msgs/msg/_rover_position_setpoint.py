@@ -95,13 +95,11 @@ class RoverPositionSetpoint(metaclass=Metaclass_RoverPositionSetpoint):
         if 'position_ned' not in kwargs:
             self.position_ned = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.position_ned = numpy.array(kwargs.get('position_ned'), dtype=numpy.float32)
-            assert self.position_ned.shape == (2, )
+            self.position_ned = kwargs.get('position_ned')
         if 'start_ned' not in kwargs:
             self.start_ned = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.start_ned = numpy.array(kwargs.get('start_ned'), dtype=numpy.float32)
-            assert self.start_ned.shape == (2, )
+            self.start_ned = kwargs.get('start_ned')
         self.cruising_speed = kwargs.get('cruising_speed', float())
         self.arrival_speed = kwargs.get('arrival_speed', float())
         self.yaw = kwargs.get('yaw', float())

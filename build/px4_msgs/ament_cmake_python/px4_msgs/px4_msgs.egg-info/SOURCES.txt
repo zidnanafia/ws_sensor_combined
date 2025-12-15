@@ -5,7 +5,6 @@ px4_msgs.egg-info/SOURCES.txt
 px4_msgs.egg-info/dependency_links.txt
 px4_msgs.egg-info/top_level.txt
 px4_msgs/msg/__init__.py
-px4_msgs/msg/_ackermann_velocity_setpoint.py
 px4_msgs/msg/_action_request.py
 px4_msgs/msg/_actuator_armed.py
 px4_msgs/msg/_actuator_controls_status.py
@@ -23,7 +22,6 @@ px4_msgs/msg/_arming_check_request.py
 px4_msgs/msg/_autotune_attitude_control_status.py
 px4_msgs/msg/_battery_info.py
 px4_msgs/msg/_battery_status.py
-px4_msgs/msg/_buffer128.py
 px4_msgs/msg/_button_event.py
 px4_msgs/msg/_camera_capture.py
 px4_msgs/msg/_camera_status.py
@@ -31,7 +29,6 @@ px4_msgs/msg/_camera_trigger.py
 px4_msgs/msg/_can_interface_status.py
 px4_msgs/msg/_cellular_status.py
 px4_msgs/msg/_collision_constraints.py
-px4_msgs/msg/_collision_report.py
 px4_msgs/msg/_config_overrides.py
 px4_msgs/msg/_control_allocator_status.py
 px4_msgs/msg/_cpuload.py
@@ -41,9 +38,7 @@ px4_msgs/msg/_debug_array.py
 px4_msgs/msg/_debug_key_value.py
 px4_msgs/msg/_debug_value.py
 px4_msgs/msg/_debug_vect.py
-px4_msgs/msg/_differential_drive_setpoint.py
 px4_msgs/msg/_differential_pressure.py
-px4_msgs/msg/_differential_velocity_setpoint.py
 px4_msgs/msg/_distance_sensor.py
 px4_msgs/msg/_distance_sensor_mode_change_request.py
 px4_msgs/msg/_dronecan_node_status.py
@@ -131,7 +126,6 @@ px4_msgs/msg/_navigator_mission_item.py
 px4_msgs/msg/_navigator_status.py
 px4_msgs/msg/_neural_control.py
 px4_msgs/msg/_normalized_unsigned_setpoint.py
-px4_msgs/msg/_npfg_status.py
 px4_msgs/msg/_obstacle_distance.py
 px4_msgs/msg/_offboard_control_mode.py
 px4_msgs/msg/_onboard_computer_status.py
@@ -176,7 +170,6 @@ px4_msgs/msg/_rover_speed_setpoint.py
 px4_msgs/msg/_rover_speed_status.py
 px4_msgs/msg/_rover_steering_setpoint.py
 px4_msgs/msg/_rover_throttle_setpoint.py
-px4_msgs/msg/_rover_velocity_status.py
 px4_msgs/msg/_rpm.py
 px4_msgs/msg/_rtl_status.py
 px4_msgs/msg/_rtl_time_estimate.py
@@ -208,10 +201,8 @@ px4_msgs/msg/_tecs_status.py
 px4_msgs/msg/_telemetry_status.py
 px4_msgs/msg/_tiltrotor_extra_controls.py
 px4_msgs/msg/_timesync_status.py
-px4_msgs/msg/_trajectory_bezier.py
 px4_msgs/msg/_trajectory_setpoint.py
 px4_msgs/msg/_trajectory_setpoint6dof.py
-px4_msgs/msg/_trajectory_waypoint.py
 px4_msgs/msg/_transponder_report.py
 px4_msgs/msg/_tune_control.py
 px4_msgs/msg/_uavcan_parameter_request.py
@@ -244,8 +235,6 @@ px4_msgs/msg/_vehicle_roi.py
 px4_msgs/msg/_vehicle_status.py
 px4_msgs/msg/_vehicle_thrust_setpoint.py
 px4_msgs/msg/_vehicle_torque_setpoint.py
-px4_msgs/msg/_vehicle_trajectory_bezier.py
-px4_msgs/msg/_vehicle_trajectory_waypoint.py
 px4_msgs/msg/_velocity_limits.py
 px4_msgs/msg/_vtol_vehicle_status.py
 px4_msgs/msg/_wheel_encoders.py

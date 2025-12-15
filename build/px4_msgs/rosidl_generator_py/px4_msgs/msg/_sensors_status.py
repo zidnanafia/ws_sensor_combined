@@ -103,13 +103,11 @@ class SensorsStatus(metaclass=Metaclass_SensorsStatus):
         if 'device_ids' not in kwargs:
             self.device_ids = numpy.zeros(4, dtype=numpy.uint32)
         else:
-            self.device_ids = numpy.array(kwargs.get('device_ids'), dtype=numpy.uint32)
-            assert self.device_ids.shape == (4, )
+            self.device_ids = kwargs.get('device_ids')
         if 'inconsistency' not in kwargs:
             self.inconsistency = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.inconsistency = numpy.array(kwargs.get('inconsistency'), dtype=numpy.float32)
-            assert self.inconsistency.shape == (4, )
+            self.inconsistency = kwargs.get('inconsistency')
         self.healthy = kwargs.get(
             'healthy',
             [bool() for x in range(4)]
@@ -117,8 +115,7 @@ class SensorsStatus(metaclass=Metaclass_SensorsStatus):
         if 'priority' not in kwargs:
             self.priority = numpy.zeros(4, dtype=numpy.uint8)
         else:
-            self.priority = numpy.array(kwargs.get('priority'), dtype=numpy.uint8)
-            assert self.priority.shape == (4, )
+            self.priority = kwargs.get('priority')
         self.enabled = kwargs.get(
             'enabled',
             [bool() for x in range(4)]

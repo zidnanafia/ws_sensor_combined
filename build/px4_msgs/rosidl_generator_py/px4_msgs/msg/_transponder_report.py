@@ -366,8 +366,7 @@ class TransponderReport(metaclass=Metaclass_TransponderReport):
         if 'callsign' not in kwargs:
             self.callsign = numpy.zeros(9, dtype=numpy.uint8)
         else:
-            self.callsign = numpy.array(kwargs.get('callsign'), dtype=numpy.uint8)
-            assert self.callsign.shape == (9, )
+            self.callsign = kwargs.get('callsign')
         self.emitter_type = kwargs.get('emitter_type', int())
         self.tslc = kwargs.get('tslc', int())
         self.flags = kwargs.get('flags', int())
@@ -375,8 +374,7 @@ class TransponderReport(metaclass=Metaclass_TransponderReport):
         if 'uas_id' not in kwargs:
             self.uas_id = numpy.zeros(18, dtype=numpy.uint8)
         else:
-            self.uas_id = numpy.array(kwargs.get('uas_id'), dtype=numpy.uint8)
-            assert self.uas_id.shape == (18, )
+            self.uas_id = kwargs.get('uas_id')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

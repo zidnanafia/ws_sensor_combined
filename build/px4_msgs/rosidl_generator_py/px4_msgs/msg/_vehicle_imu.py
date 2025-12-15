@@ -144,13 +144,11 @@ class VehicleImu(metaclass=Metaclass_VehicleImu):
         if 'delta_angle' not in kwargs:
             self.delta_angle = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.delta_angle = numpy.array(kwargs.get('delta_angle'), dtype=numpy.float32)
-            assert self.delta_angle.shape == (3, )
+            self.delta_angle = kwargs.get('delta_angle')
         if 'delta_velocity' not in kwargs:
             self.delta_velocity = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.delta_velocity = numpy.array(kwargs.get('delta_velocity'), dtype=numpy.float32)
-            assert self.delta_velocity.shape == (3, )
+            self.delta_velocity = kwargs.get('delta_velocity')
         self.delta_angle_dt = kwargs.get('delta_angle_dt', int())
         self.delta_velocity_dt = kwargs.get('delta_velocity_dt', int())
         self.delta_angle_clipping = kwargs.get('delta_angle_clipping', int())

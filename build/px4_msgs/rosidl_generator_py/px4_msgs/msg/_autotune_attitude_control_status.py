@@ -239,13 +239,11 @@ class AutotuneAttitudeControlStatus(metaclass=Metaclass_AutotuneAttitudeControlS
         if 'coeff' not in kwargs:
             self.coeff = numpy.zeros(5, dtype=numpy.float32)
         else:
-            self.coeff = numpy.array(kwargs.get('coeff'), dtype=numpy.float32)
-            assert self.coeff.shape == (5, )
+            self.coeff = kwargs.get('coeff')
         if 'coeff_var' not in kwargs:
             self.coeff_var = numpy.zeros(5, dtype=numpy.float32)
         else:
-            self.coeff_var = numpy.array(kwargs.get('coeff_var'), dtype=numpy.float32)
-            assert self.coeff_var.shape == (5, )
+            self.coeff_var = kwargs.get('coeff_var')
         self.fitness = kwargs.get('fitness', float())
         self.innov = kwargs.get('innov', float())
         self.dt_model = kwargs.get('dt_model', float())
@@ -257,8 +255,7 @@ class AutotuneAttitudeControlStatus(metaclass=Metaclass_AutotuneAttitudeControlS
         if 'rate_sp' not in kwargs:
             self.rate_sp = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.rate_sp = numpy.array(kwargs.get('rate_sp'), dtype=numpy.float32)
-            assert self.rate_sp.shape == (3, )
+            self.rate_sp = kwargs.get('rate_sp')
         self.u_filt = kwargs.get('u_filt', float())
         self.y_filt = kwargs.get('y_filt', float())
         self.state = kwargs.get('state', int())

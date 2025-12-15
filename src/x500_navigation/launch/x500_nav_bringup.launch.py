@@ -20,7 +20,7 @@ def generate_launch_description():
     # === Arguments ===
     map_file = LaunchConfiguration(
         'map',
-        default=os.path.join(pkg_x500_nav, 'maps', 'navigation_map3.yaml')
+        default=os.path.join(pkg_x500_nav, 'maps', 'navigation_map7.yaml')
     )
 
     params_file = LaunchConfiguration(

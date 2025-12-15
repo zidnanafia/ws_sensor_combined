@@ -188,8 +188,7 @@ class MavlinkTunnel(metaclass=Metaclass_MavlinkTunnel):
         if 'payload' not in kwargs:
             self.payload = numpy.zeros(128, dtype=numpy.uint8)
         else:
-            self.payload = numpy.array(kwargs.get('payload'), dtype=numpy.uint8)
-            assert self.payload.shape == (128, )
+            self.payload = kwargs.get('payload')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

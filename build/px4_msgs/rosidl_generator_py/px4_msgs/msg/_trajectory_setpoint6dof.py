@@ -102,33 +102,27 @@ class TrajectorySetpoint6dof(metaclass=Metaclass_TrajectorySetpoint6dof):
         if 'position' not in kwargs:
             self.position = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.position = numpy.array(kwargs.get('position'), dtype=numpy.float32)
-            assert self.position.shape == (3, )
+            self.position = kwargs.get('position')
         if 'velocity' not in kwargs:
             self.velocity = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.velocity = numpy.array(kwargs.get('velocity'), dtype=numpy.float32)
-            assert self.velocity.shape == (3, )
+            self.velocity = kwargs.get('velocity')
         if 'acceleration' not in kwargs:
             self.acceleration = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.acceleration = numpy.array(kwargs.get('acceleration'), dtype=numpy.float32)
-            assert self.acceleration.shape == (3, )
+            self.acceleration = kwargs.get('acceleration')
         if 'jerk' not in kwargs:
             self.jerk = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.jerk = numpy.array(kwargs.get('jerk'), dtype=numpy.float32)
-            assert self.jerk.shape == (3, )
+            self.jerk = kwargs.get('jerk')
         if 'quaternion' not in kwargs:
             self.quaternion = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.quaternion = numpy.array(kwargs.get('quaternion'), dtype=numpy.float32)
-            assert self.quaternion.shape == (4, )
+            self.quaternion = kwargs.get('quaternion')
         if 'angular_velocity' not in kwargs:
             self.angular_velocity = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.angular_velocity = numpy.array(kwargs.get('angular_velocity'), dtype=numpy.float32)
-            assert self.angular_velocity.shape == (3, )
+            self.angular_velocity = kwargs.get('angular_velocity')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

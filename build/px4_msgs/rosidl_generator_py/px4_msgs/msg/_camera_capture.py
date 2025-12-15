@@ -109,8 +109,7 @@ class CameraCapture(metaclass=Metaclass_CameraCapture):
         if 'q' not in kwargs:
             self.q = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.q = numpy.array(kwargs.get('q'), dtype=numpy.float32)
-            assert self.q.shape == (4, )
+            self.q = kwargs.get('q')
         self.result = kwargs.get('result', int())
 
     def __repr__(self):

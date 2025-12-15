@@ -96,18 +96,15 @@ class MagnetometerBiasEstimate(metaclass=Metaclass_MagnetometerBiasEstimate):
         if 'bias_x' not in kwargs:
             self.bias_x = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.bias_x = numpy.array(kwargs.get('bias_x'), dtype=numpy.float32)
-            assert self.bias_x.shape == (4, )
+            self.bias_x = kwargs.get('bias_x')
         if 'bias_y' not in kwargs:
             self.bias_y = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.bias_y = numpy.array(kwargs.get('bias_y'), dtype=numpy.float32)
-            assert self.bias_y.shape == (4, )
+            self.bias_y = kwargs.get('bias_y')
         if 'bias_z' not in kwargs:
             self.bias_z = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.bias_z = numpy.array(kwargs.get('bias_z'), dtype=numpy.float32)
-            assert self.bias_z.shape == (4, )
+            self.bias_z = kwargs.get('bias_z')
         self.valid = kwargs.get(
             'valid',
             [bool() for x in range(4)]

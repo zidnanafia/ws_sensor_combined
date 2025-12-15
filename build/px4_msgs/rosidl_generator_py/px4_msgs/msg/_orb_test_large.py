@@ -84,8 +84,7 @@ class OrbTestLarge(metaclass=Metaclass_OrbTestLarge):
         if 'junk' not in kwargs:
             self.junk = numpy.zeros(512, dtype=numpy.uint8)
         else:
-            self.junk = numpy.array(kwargs.get('junk'), dtype=numpy.uint8)
-            assert self.junk.shape == (512, )
+            self.junk = kwargs.get('junk')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

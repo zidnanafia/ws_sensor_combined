@@ -102,13 +102,11 @@ class DebugArray(metaclass=Metaclass_DebugArray):
         if 'name' not in kwargs:
             self.name = numpy.zeros(10, dtype=numpy.uint8)
         else:
-            self.name = numpy.array(kwargs.get('name'), dtype=numpy.uint8)
-            assert self.name.shape == (10, )
+            self.name = kwargs.get('name')
         if 'data' not in kwargs:
             self.data = numpy.zeros(58, dtype=numpy.float32)
         else:
-            self.data = numpy.array(kwargs.get('data'), dtype=numpy.float32)
-            assert self.data.shape == (58, )
+            self.data = kwargs.get('data')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

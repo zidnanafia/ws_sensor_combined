@@ -151,55 +151,46 @@ class EstimatorInnovations(metaclass=Metaclass_EstimatorInnovations):
         if 'gps_hvel' not in kwargs:
             self.gps_hvel = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.gps_hvel = numpy.array(kwargs.get('gps_hvel'), dtype=numpy.float32)
-            assert self.gps_hvel.shape == (2, )
+            self.gps_hvel = kwargs.get('gps_hvel')
         self.gps_vvel = kwargs.get('gps_vvel', float())
         if 'gps_hpos' not in kwargs:
             self.gps_hpos = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.gps_hpos = numpy.array(kwargs.get('gps_hpos'), dtype=numpy.float32)
-            assert self.gps_hpos.shape == (2, )
+            self.gps_hpos = kwargs.get('gps_hpos')
         self.gps_vpos = kwargs.get('gps_vpos', float())
         if 'ev_hvel' not in kwargs:
             self.ev_hvel = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.ev_hvel = numpy.array(kwargs.get('ev_hvel'), dtype=numpy.float32)
-            assert self.ev_hvel.shape == (2, )
+            self.ev_hvel = kwargs.get('ev_hvel')
         self.ev_vvel = kwargs.get('ev_vvel', float())
         if 'ev_hpos' not in kwargs:
             self.ev_hpos = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.ev_hpos = numpy.array(kwargs.get('ev_hpos'), dtype=numpy.float32)
-            assert self.ev_hpos.shape == (2, )
+            self.ev_hpos = kwargs.get('ev_hpos')
         self.ev_vpos = kwargs.get('ev_vpos', float())
         self.rng_vpos = kwargs.get('rng_vpos', float())
         self.baro_vpos = kwargs.get('baro_vpos', float())
         if 'aux_hvel' not in kwargs:
             self.aux_hvel = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.aux_hvel = numpy.array(kwargs.get('aux_hvel'), dtype=numpy.float32)
-            assert self.aux_hvel.shape == (2, )
+            self.aux_hvel = kwargs.get('aux_hvel')
         if 'flow' not in kwargs:
             self.flow = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.flow = numpy.array(kwargs.get('flow'), dtype=numpy.float32)
-            assert self.flow.shape == (2, )
+            self.flow = kwargs.get('flow')
         self.heading = kwargs.get('heading', float())
         if 'mag_field' not in kwargs:
             self.mag_field = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.mag_field = numpy.array(kwargs.get('mag_field'), dtype=numpy.float32)
-            assert self.mag_field.shape == (3, )
+            self.mag_field = kwargs.get('mag_field')
         if 'gravity' not in kwargs:
             self.gravity = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.gravity = numpy.array(kwargs.get('gravity'), dtype=numpy.float32)
-            assert self.gravity.shape == (3, )
+            self.gravity = kwargs.get('gravity')
         if 'drag' not in kwargs:
             self.drag = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.drag = numpy.array(kwargs.get('drag'), dtype=numpy.float32)
-            assert self.drag.shape == (2, )
+            self.drag = kwargs.get('drag')
         self.airspeed = kwargs.get('airspeed', float())
         self.beta = kwargs.get('beta', float())
         self.hagl = kwargs.get('hagl', float())

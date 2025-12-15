@@ -120,18 +120,15 @@ class FollowTargetEstimator(metaclass=Metaclass_FollowTargetEstimator):
         if 'pos_est' not in kwargs:
             self.pos_est = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.pos_est = numpy.array(kwargs.get('pos_est'), dtype=numpy.float32)
-            assert self.pos_est.shape == (3, )
+            self.pos_est = kwargs.get('pos_est')
         if 'vel_est' not in kwargs:
             self.vel_est = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.vel_est = numpy.array(kwargs.get('vel_est'), dtype=numpy.float32)
-            assert self.vel_est.shape == (3, )
+            self.vel_est = kwargs.get('vel_est')
         if 'acc_est' not in kwargs:
             self.acc_est = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.acc_est = numpy.array(kwargs.get('acc_est'), dtype=numpy.float32)
-            assert self.acc_est.shape == (3, )
+            self.acc_est = kwargs.get('acc_est')
         self.prediction_count = kwargs.get('prediction_count', int())
         self.fusion_count = kwargs.get('fusion_count', int())
 

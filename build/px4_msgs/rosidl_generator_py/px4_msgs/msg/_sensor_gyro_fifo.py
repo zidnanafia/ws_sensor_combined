@@ -122,18 +122,15 @@ class SensorGyroFifo(metaclass=Metaclass_SensorGyroFifo):
         if 'x' not in kwargs:
             self.x = numpy.zeros(32, dtype=numpy.int16)
         else:
-            self.x = numpy.array(kwargs.get('x'), dtype=numpy.int16)
-            assert self.x.shape == (32, )
+            self.x = kwargs.get('x')
         if 'y' not in kwargs:
             self.y = numpy.zeros(32, dtype=numpy.int16)
         else:
-            self.y = numpy.array(kwargs.get('y'), dtype=numpy.int16)
-            assert self.y.shape == (32, )
+            self.y = kwargs.get('y')
         if 'z' not in kwargs:
             self.z = numpy.zeros(32, dtype=numpy.int16)
         else:
-            self.z = numpy.array(kwargs.get('z'), dtype=numpy.int16)
-            assert self.z.shape == (32, )
+            self.z = kwargs.get('z')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

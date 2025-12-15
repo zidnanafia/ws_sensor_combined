@@ -144,13 +144,11 @@ class SensorGnssRelative(metaclass=Metaclass_SensorGnssRelative):
         if 'position' not in kwargs:
             self.position = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.position = numpy.array(kwargs.get('position'), dtype=numpy.float32)
-            assert self.position.shape == (3, )
+            self.position = kwargs.get('position')
         if 'position_accuracy' not in kwargs:
             self.position_accuracy = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.position_accuracy = numpy.array(kwargs.get('position_accuracy'), dtype=numpy.float32)
-            assert self.position_accuracy.shape == (3, )
+            self.position_accuracy = kwargs.get('position_accuracy')
         self.heading = kwargs.get('heading', float())
         self.heading_accuracy = kwargs.get('heading_accuracy', float())
         self.position_length = kwargs.get('position_length', float())

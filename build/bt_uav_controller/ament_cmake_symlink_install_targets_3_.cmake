@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller/bt_uav_controller_node" "/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller/takeoff_action_server" "TARGETS" "bt_uav_controller_node" "takeoff_action_server" "DESTINATION" "lib/bt_uav_controller")

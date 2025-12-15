@@ -116,13 +116,11 @@ class VehicleLocalPositionSetpoint(metaclass=Metaclass_VehicleLocalPositionSetpo
         if 'acceleration' not in kwargs:
             self.acceleration = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.acceleration = numpy.array(kwargs.get('acceleration'), dtype=numpy.float32)
-            assert self.acceleration.shape == (3, )
+            self.acceleration = kwargs.get('acceleration')
         if 'thrust' not in kwargs:
             self.thrust = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.thrust = numpy.array(kwargs.get('thrust'), dtype=numpy.float32)
-            assert self.thrust.shape == (3, )
+            self.thrust = kwargs.get('thrust')
         self.yaw = kwargs.get('yaw', float())
         self.yawspeed = kwargs.get('yawspeed', float())
 

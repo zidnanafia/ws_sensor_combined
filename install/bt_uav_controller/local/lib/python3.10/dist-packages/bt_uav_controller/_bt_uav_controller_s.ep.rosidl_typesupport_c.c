@@ -1,0 +1,1 @@
+/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller/rosidl_generator_py/bt_uav_controller/_bt_uav_controller_s.ep.rosidl_typesupport_c.c

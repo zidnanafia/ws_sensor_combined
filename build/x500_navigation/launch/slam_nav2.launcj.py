@@ -1,1 +1,0 @@
-/home/imamalghifary/ws_sensor_combined/src/x500_navigation/launch/slam_nav2.launcj.py

@@ -99,8 +99,7 @@ class DatamanRequest(metaclass=Metaclass_DatamanRequest):
         if 'data' not in kwargs:
             self.data = numpy.zeros(56, dtype=numpy.uint8)
         else:
-            self.data = numpy.array(kwargs.get('data'), dtype=numpy.uint8)
-            assert self.data.shape == (56, )
+            self.data = kwargs.get('data')
         self.data_length = kwargs.get('data_length', int())
 
     def __repr__(self):

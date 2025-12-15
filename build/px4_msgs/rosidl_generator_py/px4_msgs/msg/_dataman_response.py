@@ -151,8 +151,7 @@ class DatamanResponse(metaclass=Metaclass_DatamanResponse):
         if 'data' not in kwargs:
             self.data = numpy.zeros(56, dtype=numpy.uint8)
         else:
-            self.data = numpy.array(kwargs.get('data'), dtype=numpy.uint8)
-            assert self.data.shape == (56, )
+            self.data = kwargs.get('data')
         self.status = kwargs.get('status', int())
 
     def __repr__(self):

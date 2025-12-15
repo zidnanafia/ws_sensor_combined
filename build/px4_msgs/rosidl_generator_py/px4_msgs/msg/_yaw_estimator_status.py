@@ -110,23 +110,19 @@ class YawEstimatorStatus(metaclass=Metaclass_YawEstimatorStatus):
         if 'yaw' not in kwargs:
             self.yaw = numpy.zeros(5, dtype=numpy.float32)
         else:
-            self.yaw = numpy.array(kwargs.get('yaw'), dtype=numpy.float32)
-            assert self.yaw.shape == (5, )
+            self.yaw = kwargs.get('yaw')
         if 'innov_vn' not in kwargs:
             self.innov_vn = numpy.zeros(5, dtype=numpy.float32)
         else:
-            self.innov_vn = numpy.array(kwargs.get('innov_vn'), dtype=numpy.float32)
-            assert self.innov_vn.shape == (5, )
+            self.innov_vn = kwargs.get('innov_vn')
         if 'innov_ve' not in kwargs:
             self.innov_ve = numpy.zeros(5, dtype=numpy.float32)
         else:
-            self.innov_ve = numpy.array(kwargs.get('innov_ve'), dtype=numpy.float32)
-            assert self.innov_ve.shape == (5, )
+            self.innov_ve = kwargs.get('innov_ve')
         if 'weight' not in kwargs:
             self.weight = numpy.zeros(5, dtype=numpy.float32)
         else:
-            self.weight = numpy.array(kwargs.get('weight'), dtype=numpy.float32)
-            assert self.weight.shape == (5, )
+            self.weight = kwargs.get('weight')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

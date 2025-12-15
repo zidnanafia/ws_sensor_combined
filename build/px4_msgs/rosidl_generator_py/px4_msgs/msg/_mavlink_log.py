@@ -95,8 +95,7 @@ class MavlinkLog(metaclass=Metaclass_MavlinkLog):
         if 'text' not in kwargs:
             self.text = numpy.zeros(127, dtype=numpy.uint8)
         else:
-            self.text = numpy.array(kwargs.get('text'), dtype=numpy.uint8)
-            assert self.text.shape == (127, )
+            self.text = kwargs.get('text')
         self.severity = kwargs.get('severity', int())
 
     def __repr__(self):

@@ -106,8 +106,7 @@ class ActuatorOutputs(metaclass=Metaclass_ActuatorOutputs):
         if 'output' not in kwargs:
             self.output = numpy.zeros(16, dtype=numpy.float32)
         else:
-            self.output = numpy.array(kwargs.get('output'), dtype=numpy.float32)
-            assert self.output.shape == (16, )
+            self.output = kwargs.get('output')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

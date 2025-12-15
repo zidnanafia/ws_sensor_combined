@@ -118,33 +118,27 @@ class SensorGyroFft(metaclass=Metaclass_SensorGyroFft):
         if 'peak_frequencies_x' not in kwargs:
             self.peak_frequencies_x = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.peak_frequencies_x = numpy.array(kwargs.get('peak_frequencies_x'), dtype=numpy.float32)
-            assert self.peak_frequencies_x.shape == (3, )
+            self.peak_frequencies_x = kwargs.get('peak_frequencies_x')
         if 'peak_frequencies_y' not in kwargs:
             self.peak_frequencies_y = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.peak_frequencies_y = numpy.array(kwargs.get('peak_frequencies_y'), dtype=numpy.float32)
-            assert self.peak_frequencies_y.shape == (3, )
+            self.peak_frequencies_y = kwargs.get('peak_frequencies_y')
         if 'peak_frequencies_z' not in kwargs:
             self.peak_frequencies_z = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.peak_frequencies_z = numpy.array(kwargs.get('peak_frequencies_z'), dtype=numpy.float32)
-            assert self.peak_frequencies_z.shape == (3, )
+            self.peak_frequencies_z = kwargs.get('peak_frequencies_z')
         if 'peak_snr_x' not in kwargs:
             self.peak_snr_x = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.peak_snr_x = numpy.array(kwargs.get('peak_snr_x'), dtype=numpy.float32)
-            assert self.peak_snr_x.shape == (3, )
+            self.peak_snr_x = kwargs.get('peak_snr_x')
         if 'peak_snr_y' not in kwargs:
             self.peak_snr_y = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.peak_snr_y = numpy.array(kwargs.get('peak_snr_y'), dtype=numpy.float32)
-            assert self.peak_snr_y.shape == (3, )
+            self.peak_snr_y = kwargs.get('peak_snr_y')
         if 'peak_snr_z' not in kwargs:
             self.peak_snr_z = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.peak_snr_z = numpy.array(kwargs.get('peak_snr_z'), dtype=numpy.float32)
-            assert self.peak_snr_z.shape == (3, )
+            self.peak_snr_z = kwargs.get('peak_snr_z')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

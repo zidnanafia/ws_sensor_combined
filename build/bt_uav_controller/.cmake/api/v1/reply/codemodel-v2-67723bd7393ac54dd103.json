@@ -1,0 +1,251 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b13da3af9049cc27cb26.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "bt_uav_controller__py",
+					"jsonFile" : "directory-bt_uav_controller__py-5170b63d327d100e4ad8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller/bt_uav_controller__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "bt_uav_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_bt_uav_controller_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_bt_uav_controller_egg-7c7d6ec70b5467e8c209.json",
+					"name" : "ament_cmake_python_build_bt_uav_controller_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_bt_uav_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_bt_uav_controller-91a2e240f57e2b6f8d8c.json",
+					"name" : "ament_cmake_python_symlink_bt_uav_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller-e915cceac98d60f78db9.json",
+					"name" : "bt_uav_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__cpp-44de835489935961f899.json",
+					"name" : "bt_uav_controller__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "bt_uav_controller__py::@d41e1e5435d306893802",
+					"jsonFile" : "target-bt_uav_controller__py-3e46de5312978910755c.json",
+					"name" : "bt_uav_controller__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__rosidl_generator_c-f9a2b0af4672921dc139.json",
+					"name" : "bt_uav_controller__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__rosidl_generator_py-7c9e13aeb07fc5d5339a.json",
+					"name" : "bt_uav_controller__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__rosidl_typesupport_c-f93955321d63cd29a98b.json",
+					"name" : "bt_uav_controller__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__rosidl_typesupport_c__pyext-21befb39c8ba9ca9e1c5.json",
+					"name" : "bt_uav_controller__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__rosidl_typesupport_cpp-844eb022a751fd671b0d.json",
+					"name" : "bt_uav_controller__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__rosidl_typesupport_fastrtps_c-c1d368da40a91ed70b4f.json",
+					"name" : "bt_uav_controller__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__rosidl_typesupport_fastrtps_c__pyext-1177c5478a802943caa5.json",
+					"name" : "bt_uav_controller__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__rosidl_typesupport_fastrtps_cpp-7eb14196266c973058cc.json",
+					"name" : "bt_uav_controller__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__rosidl_typesupport_introspection_c-66b77f66e585d1cd8760.json",
+					"name" : "bt_uav_controller__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__rosidl_typesupport_introspection_c__pyext-e34137bd8cd002ef09f4.json",
+					"name" : "bt_uav_controller__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller__rosidl_typesupport_introspection_cpp-97ab6033bd2b72534fe3.json",
+					"name" : "bt_uav_controller__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller_node-97f75c64d8ec6c6d1835.json",
+					"name" : "bt_uav_controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bt_uav_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bt_uav_controller_uninstall-57cdc3a5ead094a7a065.json",
+					"name" : "bt_uav_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "takeoff_action_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-takeoff_action_server-a92ef5d16ac56ef09d94.json",
+					"name" : "takeoff_action_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-1d42e6771894b7e8e326.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller",
+		"source" : "/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

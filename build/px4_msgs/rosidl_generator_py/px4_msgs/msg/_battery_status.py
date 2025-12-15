@@ -406,8 +406,7 @@ class BatteryStatus(metaclass=Metaclass_BatteryStatus):
         if 'voltage_cell_v' not in kwargs:
             self.voltage_cell_v = numpy.zeros(14, dtype=numpy.float32)
         else:
-            self.voltage_cell_v = numpy.array(kwargs.get('voltage_cell_v'), dtype=numpy.float32)
-            assert self.voltage_cell_v.shape == (14, )
+            self.voltage_cell_v = kwargs.get('voltage_cell_v')
         self.max_cell_voltage_delta = kwargs.get('max_cell_voltage_delta', float())
         self.is_powering_off = kwargs.get('is_powering_off', bool())
         self.is_required = kwargs.get('is_required', bool())

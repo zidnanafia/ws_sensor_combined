@@ -144,19 +144,16 @@ class ControlAllocatorStatus(metaclass=Metaclass_ControlAllocatorStatus):
         if 'unallocated_torque' not in kwargs:
             self.unallocated_torque = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.unallocated_torque = numpy.array(kwargs.get('unallocated_torque'), dtype=numpy.float32)
-            assert self.unallocated_torque.shape == (3, )
+            self.unallocated_torque = kwargs.get('unallocated_torque')
         self.thrust_setpoint_achieved = kwargs.get('thrust_setpoint_achieved', bool())
         if 'unallocated_thrust' not in kwargs:
             self.unallocated_thrust = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.unallocated_thrust = numpy.array(kwargs.get('unallocated_thrust'), dtype=numpy.float32)
-            assert self.unallocated_thrust.shape == (3, )
+            self.unallocated_thrust = kwargs.get('unallocated_thrust')
         if 'actuator_saturation' not in kwargs:
             self.actuator_saturation = numpy.zeros(16, dtype=numpy.int8)
         else:
-            self.actuator_saturation = numpy.array(kwargs.get('actuator_saturation'), dtype=numpy.int8)
-            assert self.actuator_saturation.shape == (16, )
+            self.actuator_saturation = kwargs.get('actuator_saturation')
         self.handled_motor_failure_mask = kwargs.get('handled_motor_failure_mask', int())
 
     def __repr__(self):

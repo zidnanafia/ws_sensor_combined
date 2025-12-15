@@ -86,13 +86,11 @@ class WheelEncoders(metaclass=Metaclass_WheelEncoders):
         if 'wheel_speed' not in kwargs:
             self.wheel_speed = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.wheel_speed = numpy.array(kwargs.get('wheel_speed'), dtype=numpy.float32)
-            assert self.wheel_speed.shape == (2, )
+            self.wheel_speed = kwargs.get('wheel_speed')
         if 'wheel_angle' not in kwargs:
             self.wheel_angle = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.wheel_angle = numpy.array(kwargs.get('wheel_angle'), dtype=numpy.float32)
-            assert self.wheel_angle.shape == (2, )
+            self.wheel_angle = kwargs.get('wheel_angle')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

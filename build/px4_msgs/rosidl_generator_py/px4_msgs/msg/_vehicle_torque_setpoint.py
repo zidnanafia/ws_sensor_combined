@@ -86,8 +86,7 @@ class VehicleTorqueSetpoint(metaclass=Metaclass_VehicleTorqueSetpoint):
         if 'xyz' not in kwargs:
             self.xyz = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.xyz = numpy.array(kwargs.get('xyz'), dtype=numpy.float32)
-            assert self.xyz.shape == (3, )
+            self.xyz = kwargs.get('xyz')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

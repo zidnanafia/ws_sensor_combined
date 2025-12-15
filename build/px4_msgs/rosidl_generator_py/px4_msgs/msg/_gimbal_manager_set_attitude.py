@@ -167,8 +167,7 @@ class GimbalManagerSetAttitude(metaclass=Metaclass_GimbalManagerSetAttitude):
         if 'q' not in kwargs:
             self.q = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.q = numpy.array(kwargs.get('q'), dtype=numpy.float32)
-            assert self.q.shape == (4, )
+            self.q = kwargs.get('q')
         self.angular_velocity_x = kwargs.get('angular_velocity_x', float())
         self.angular_velocity_y = kwargs.get('angular_velocity_y', float())
         self.angular_velocity_z = kwargs.get('angular_velocity_z', float())

@@ -91,8 +91,7 @@ class DebugVect(metaclass=Metaclass_DebugVect):
         if 'name' not in kwargs:
             self.name = numpy.zeros(10, dtype=numpy.uint8)
         else:
-            self.name = numpy.array(kwargs.get('name'), dtype=numpy.uint8)
-            assert self.name.shape == (10, )
+            self.name = kwargs.get('name')
         self.x = kwargs.get('x', float())
         self.y = kwargs.get('y', float())
         self.z = kwargs.get('z', float())

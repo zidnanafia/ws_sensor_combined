@@ -170,103 +170,83 @@ class SensorCorrection(metaclass=Metaclass_SensorCorrection):
         if 'accel_device_ids' not in kwargs:
             self.accel_device_ids = numpy.zeros(4, dtype=numpy.uint32)
         else:
-            self.accel_device_ids = numpy.array(kwargs.get('accel_device_ids'), dtype=numpy.uint32)
-            assert self.accel_device_ids.shape == (4, )
+            self.accel_device_ids = kwargs.get('accel_device_ids')
         if 'accel_temperature' not in kwargs:
             self.accel_temperature = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.accel_temperature = numpy.array(kwargs.get('accel_temperature'), dtype=numpy.float32)
-            assert self.accel_temperature.shape == (4, )
+            self.accel_temperature = kwargs.get('accel_temperature')
         if 'accel_offset_0' not in kwargs:
             self.accel_offset_0 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.accel_offset_0 = numpy.array(kwargs.get('accel_offset_0'), dtype=numpy.float32)
-            assert self.accel_offset_0.shape == (3, )
+            self.accel_offset_0 = kwargs.get('accel_offset_0')
         if 'accel_offset_1' not in kwargs:
             self.accel_offset_1 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.accel_offset_1 = numpy.array(kwargs.get('accel_offset_1'), dtype=numpy.float32)
-            assert self.accel_offset_1.shape == (3, )
+            self.accel_offset_1 = kwargs.get('accel_offset_1')
         if 'accel_offset_2' not in kwargs:
             self.accel_offset_2 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.accel_offset_2 = numpy.array(kwargs.get('accel_offset_2'), dtype=numpy.float32)
-            assert self.accel_offset_2.shape == (3, )
+            self.accel_offset_2 = kwargs.get('accel_offset_2')
         if 'accel_offset_3' not in kwargs:
             self.accel_offset_3 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.accel_offset_3 = numpy.array(kwargs.get('accel_offset_3'), dtype=numpy.float32)
-            assert self.accel_offset_3.shape == (3, )
+            self.accel_offset_3 = kwargs.get('accel_offset_3')
         if 'gyro_device_ids' not in kwargs:
             self.gyro_device_ids = numpy.zeros(4, dtype=numpy.uint32)
         else:
-            self.gyro_device_ids = numpy.array(kwargs.get('gyro_device_ids'), dtype=numpy.uint32)
-            assert self.gyro_device_ids.shape == (4, )
+            self.gyro_device_ids = kwargs.get('gyro_device_ids')
         if 'gyro_temperature' not in kwargs:
             self.gyro_temperature = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.gyro_temperature = numpy.array(kwargs.get('gyro_temperature'), dtype=numpy.float32)
-            assert self.gyro_temperature.shape == (4, )
+            self.gyro_temperature = kwargs.get('gyro_temperature')
         if 'gyro_offset_0' not in kwargs:
             self.gyro_offset_0 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.gyro_offset_0 = numpy.array(kwargs.get('gyro_offset_0'), dtype=numpy.float32)
-            assert self.gyro_offset_0.shape == (3, )
+            self.gyro_offset_0 = kwargs.get('gyro_offset_0')
         if 'gyro_offset_1' not in kwargs:
             self.gyro_offset_1 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.gyro_offset_1 = numpy.array(kwargs.get('gyro_offset_1'), dtype=numpy.float32)
-            assert self.gyro_offset_1.shape == (3, )
+            self.gyro_offset_1 = kwargs.get('gyro_offset_1')
         if 'gyro_offset_2' not in kwargs:
             self.gyro_offset_2 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.gyro_offset_2 = numpy.array(kwargs.get('gyro_offset_2'), dtype=numpy.float32)
-            assert self.gyro_offset_2.shape == (3, )
+            self.gyro_offset_2 = kwargs.get('gyro_offset_2')
         if 'gyro_offset_3' not in kwargs:
             self.gyro_offset_3 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.gyro_offset_3 = numpy.array(kwargs.get('gyro_offset_3'), dtype=numpy.float32)
-            assert self.gyro_offset_3.shape == (3, )
+            self.gyro_offset_3 = kwargs.get('gyro_offset_3')
         if 'mag_device_ids' not in kwargs:
             self.mag_device_ids = numpy.zeros(4, dtype=numpy.uint32)
         else:
-            self.mag_device_ids = numpy.array(kwargs.get('mag_device_ids'), dtype=numpy.uint32)
-            assert self.mag_device_ids.shape == (4, )
+            self.mag_device_ids = kwargs.get('mag_device_ids')
         if 'mag_temperature' not in kwargs:
             self.mag_temperature = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.mag_temperature = numpy.array(kwargs.get('mag_temperature'), dtype=numpy.float32)
-            assert self.mag_temperature.shape == (4, )
+            self.mag_temperature = kwargs.get('mag_temperature')
         if 'mag_offset_0' not in kwargs:
             self.mag_offset_0 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.mag_offset_0 = numpy.array(kwargs.get('mag_offset_0'), dtype=numpy.float32)
-            assert self.mag_offset_0.shape == (3, )
+            self.mag_offset_0 = kwargs.get('mag_offset_0')
         if 'mag_offset_1' not in kwargs:
             self.mag_offset_1 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.mag_offset_1 = numpy.array(kwargs.get('mag_offset_1'), dtype=numpy.float32)
-            assert self.mag_offset_1.shape == (3, )
+            self.mag_offset_1 = kwargs.get('mag_offset_1')
         if 'mag_offset_2' not in kwargs:
             self.mag_offset_2 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.mag_offset_2 = numpy.array(kwargs.get('mag_offset_2'), dtype=numpy.float32)
-            assert self.mag_offset_2.shape == (3, )
+            self.mag_offset_2 = kwargs.get('mag_offset_2')
         if 'mag_offset_3' not in kwargs:
             self.mag_offset_3 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.mag_offset_3 = numpy.array(kwargs.get('mag_offset_3'), dtype=numpy.float32)
-            assert self.mag_offset_3.shape == (3, )
+            self.mag_offset_3 = kwargs.get('mag_offset_3')
         if 'baro_device_ids' not in kwargs:
             self.baro_device_ids = numpy.zeros(4, dtype=numpy.uint32)
         else:
-            self.baro_device_ids = numpy.array(kwargs.get('baro_device_ids'), dtype=numpy.uint32)
-            assert self.baro_device_ids.shape == (4, )
+            self.baro_device_ids = kwargs.get('baro_device_ids')
         if 'baro_temperature' not in kwargs:
             self.baro_temperature = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.baro_temperature = numpy.array(kwargs.get('baro_temperature'), dtype=numpy.float32)
-            assert self.baro_temperature.shape == (4, )
+            self.baro_temperature = kwargs.get('baro_temperature')
         self.baro_offset_0 = kwargs.get('baro_offset_0', float())
         self.baro_offset_1 = kwargs.get('baro_offset_1', float())
         self.baro_offset_2 = kwargs.get('baro_offset_2', float())

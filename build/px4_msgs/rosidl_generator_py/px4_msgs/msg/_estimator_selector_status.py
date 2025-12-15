@@ -135,13 +135,11 @@ class EstimatorSelectorStatus(metaclass=Metaclass_EstimatorSelectorStatus):
         if 'combined_test_ratio' not in kwargs:
             self.combined_test_ratio = numpy.zeros(9, dtype=numpy.float32)
         else:
-            self.combined_test_ratio = numpy.array(kwargs.get('combined_test_ratio'), dtype=numpy.float32)
-            assert self.combined_test_ratio.shape == (9, )
+            self.combined_test_ratio = kwargs.get('combined_test_ratio')
         if 'relative_test_ratio' not in kwargs:
             self.relative_test_ratio = numpy.zeros(9, dtype=numpy.float32)
         else:
-            self.relative_test_ratio = numpy.array(kwargs.get('relative_test_ratio'), dtype=numpy.float32)
-            assert self.relative_test_ratio.shape == (9, )
+            self.relative_test_ratio = kwargs.get('relative_test_ratio')
         self.healthy = kwargs.get(
             'healthy',
             [bool() for x in range(9)]
@@ -149,13 +147,11 @@ class EstimatorSelectorStatus(metaclass=Metaclass_EstimatorSelectorStatus):
         if 'accumulated_gyro_error' not in kwargs:
             self.accumulated_gyro_error = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.accumulated_gyro_error = numpy.array(kwargs.get('accumulated_gyro_error'), dtype=numpy.float32)
-            assert self.accumulated_gyro_error.shape == (4, )
+            self.accumulated_gyro_error = kwargs.get('accumulated_gyro_error')
         if 'accumulated_accel_error' not in kwargs:
             self.accumulated_accel_error = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.accumulated_accel_error = numpy.array(kwargs.get('accumulated_accel_error'), dtype=numpy.float32)
-            assert self.accumulated_accel_error.shape == (4, )
+            self.accumulated_accel_error = kwargs.get('accumulated_accel_error')
         self.gyro_fault_detected = kwargs.get('gyro_fault_detected', bool())
         self.accel_fault_detected = kwargs.get('accel_fault_detected', bool())
 

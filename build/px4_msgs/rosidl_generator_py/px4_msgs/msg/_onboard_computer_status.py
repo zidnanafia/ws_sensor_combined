@@ -149,76 +149,62 @@ class OnboardComputerStatus(metaclass=Metaclass_OnboardComputerStatus):
         if 'cpu_cores' not in kwargs:
             self.cpu_cores = numpy.zeros(8, dtype=numpy.uint8)
         else:
-            self.cpu_cores = numpy.array(kwargs.get('cpu_cores'), dtype=numpy.uint8)
-            assert self.cpu_cores.shape == (8, )
+            self.cpu_cores = kwargs.get('cpu_cores')
         if 'cpu_combined' not in kwargs:
             self.cpu_combined = numpy.zeros(10, dtype=numpy.uint8)
         else:
-            self.cpu_combined = numpy.array(kwargs.get('cpu_combined'), dtype=numpy.uint8)
-            assert self.cpu_combined.shape == (10, )
+            self.cpu_combined = kwargs.get('cpu_combined')
         if 'gpu_cores' not in kwargs:
             self.gpu_cores = numpy.zeros(4, dtype=numpy.uint8)
         else:
-            self.gpu_cores = numpy.array(kwargs.get('gpu_cores'), dtype=numpy.uint8)
-            assert self.gpu_cores.shape == (4, )
+            self.gpu_cores = kwargs.get('gpu_cores')
         if 'gpu_combined' not in kwargs:
             self.gpu_combined = numpy.zeros(10, dtype=numpy.uint8)
         else:
-            self.gpu_combined = numpy.array(kwargs.get('gpu_combined'), dtype=numpy.uint8)
-            assert self.gpu_combined.shape == (10, )
+            self.gpu_combined = kwargs.get('gpu_combined')
         self.temperature_board = kwargs.get('temperature_board', int())
         if 'temperature_core' not in kwargs:
             self.temperature_core = numpy.zeros(8, dtype=numpy.int8)
         else:
-            self.temperature_core = numpy.array(kwargs.get('temperature_core'), dtype=numpy.int8)
-            assert self.temperature_core.shape == (8, )
+            self.temperature_core = kwargs.get('temperature_core')
         if 'fan_speed' not in kwargs:
             self.fan_speed = numpy.zeros(4, dtype=numpy.int16)
         else:
-            self.fan_speed = numpy.array(kwargs.get('fan_speed'), dtype=numpy.int16)
-            assert self.fan_speed.shape == (4, )
+            self.fan_speed = kwargs.get('fan_speed')
         self.ram_usage = kwargs.get('ram_usage', int())
         self.ram_total = kwargs.get('ram_total', int())
         if 'storage_type' not in kwargs:
             self.storage_type = numpy.zeros(4, dtype=numpy.uint32)
         else:
-            self.storage_type = numpy.array(kwargs.get('storage_type'), dtype=numpy.uint32)
-            assert self.storage_type.shape == (4, )
+            self.storage_type = kwargs.get('storage_type')
         if 'storage_usage' not in kwargs:
             self.storage_usage = numpy.zeros(4, dtype=numpy.uint32)
         else:
-            self.storage_usage = numpy.array(kwargs.get('storage_usage'), dtype=numpy.uint32)
-            assert self.storage_usage.shape == (4, )
+            self.storage_usage = kwargs.get('storage_usage')
         if 'storage_total' not in kwargs:
             self.storage_total = numpy.zeros(4, dtype=numpy.uint32)
         else:
-            self.storage_total = numpy.array(kwargs.get('storage_total'), dtype=numpy.uint32)
-            assert self.storage_total.shape == (4, )
+            self.storage_total = kwargs.get('storage_total')
         if 'link_type' not in kwargs:
             self.link_type = numpy.zeros(6, dtype=numpy.uint32)
         else:
-            self.link_type = numpy.array(kwargs.get('link_type'), dtype=numpy.uint32)
-            assert self.link_type.shape == (6, )
+            self.link_type = kwargs.get('link_type')
         if 'link_tx_rate' not in kwargs:
             self.link_tx_rate = numpy.zeros(6, dtype=numpy.uint32)
         else:
-            self.link_tx_rate = numpy.array(kwargs.get('link_tx_rate'), dtype=numpy.uint32)
-            assert self.link_tx_rate.shape == (6, )
+            self.link_tx_rate = kwargs.get('link_tx_rate')
         if 'link_rx_rate' not in kwargs:
             self.link_rx_rate = numpy.zeros(6, dtype=numpy.uint32)
         else:
-            self.link_rx_rate = numpy.array(kwargs.get('link_rx_rate'), dtype=numpy.uint32)
-            assert self.link_rx_rate.shape == (6, )
+            self.link_rx_rate = kwargs.get('link_rx_rate')
         if 'link_tx_max' not in kwargs:
             self.link_tx_max = numpy.zeros(6, dtype=numpy.uint32)
         else:
-            self.link_tx_max = numpy.array(kwargs.get('link_tx_max'), dtype=numpy.uint32)
-            assert self.link_tx_max.shape == (6, )
+            self.link_tx_max = kwargs.get('link_tx_max')
         if 'link_rx_max' not in kwargs:
             self.link_rx_max = numpy.zeros(6, dtype=numpy.uint32)
         else:
-            self.link_rx_max = numpy.array(kwargs.get('link_rx_max'), dtype=numpy.uint32)
-            assert self.link_rx_max.shape == (6, )
+            self.link_rx_max = kwargs.get('link_rx_max')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="3">
+  <BehaviorTree ID="MainTree">
+    <Sequence>
+      <CheckWaypointPublished/>
+      <Arm/>
+      <TakeOff/>
+      <IsOffboardMode/>
+      <WaitForGoalReached/>
+      <Land/>
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="Arm"
+            editable="true"/>
+    <Action ID="CheckWaypointPublished"
+            editable="true"/>
+    <Action ID="IsOffboardMode"
+            editable="true"/>
+    <Action ID="Land"
+            editable="true"/>
+    <Action ID="TakeOff"
+            editable="true"/>
+    <Action ID="WaitForGoalReached"
+            editable="true"/>
+  </TreeNodesModel>
+
+</root>

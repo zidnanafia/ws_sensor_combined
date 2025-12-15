@@ -1,1 +1,0 @@
-/home/imamalghifary/ws_sensor_combined/build/x500_description/ament_cmake_environment_hooks/local_setup.bash

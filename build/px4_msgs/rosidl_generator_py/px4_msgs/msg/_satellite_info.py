@@ -116,33 +116,27 @@ class SatelliteInfo(metaclass=Metaclass_SatelliteInfo):
         if 'svid' not in kwargs:
             self.svid = numpy.zeros(40, dtype=numpy.uint8)
         else:
-            self.svid = numpy.array(kwargs.get('svid'), dtype=numpy.uint8)
-            assert self.svid.shape == (40, )
+            self.svid = kwargs.get('svid')
         if 'used' not in kwargs:
             self.used = numpy.zeros(40, dtype=numpy.uint8)
         else:
-            self.used = numpy.array(kwargs.get('used'), dtype=numpy.uint8)
-            assert self.used.shape == (40, )
+            self.used = kwargs.get('used')
         if 'elevation' not in kwargs:
             self.elevation = numpy.zeros(40, dtype=numpy.uint8)
         else:
-            self.elevation = numpy.array(kwargs.get('elevation'), dtype=numpy.uint8)
-            assert self.elevation.shape == (40, )
+            self.elevation = kwargs.get('elevation')
         if 'azimuth' not in kwargs:
             self.azimuth = numpy.zeros(40, dtype=numpy.uint8)
         else:
-            self.azimuth = numpy.array(kwargs.get('azimuth'), dtype=numpy.uint8)
-            assert self.azimuth.shape == (40, )
+            self.azimuth = kwargs.get('azimuth')
         if 'snr' not in kwargs:
             self.snr = numpy.zeros(40, dtype=numpy.uint8)
         else:
-            self.snr = numpy.array(kwargs.get('snr'), dtype=numpy.uint8)
-            assert self.snr.shape == (40, )
+            self.snr = kwargs.get('snr')
         if 'prn' not in kwargs:
             self.prn = numpy.zeros(40, dtype=numpy.uint8)
         else:
-            self.prn = numpy.array(kwargs.get('prn'), dtype=numpy.uint8)
-            assert self.prn.shape == (40, )
+            self.prn = kwargs.get('prn')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

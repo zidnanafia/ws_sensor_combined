@@ -93,8 +93,7 @@ class VehicleMagnetometer(metaclass=Metaclass_VehicleMagnetometer):
         if 'magnetometer_ga' not in kwargs:
             self.magnetometer_ga = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.magnetometer_ga = numpy.array(kwargs.get('magnetometer_ga'), dtype=numpy.float32)
-            assert self.magnetometer_ga.shape == (3, )
+            self.magnetometer_ga = kwargs.get('magnetometer_ga')
         self.calibration_count = kwargs.get('calibration_count', int())
 
     def __repr__(self):

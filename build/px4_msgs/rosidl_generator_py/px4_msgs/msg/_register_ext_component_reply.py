@@ -119,8 +119,7 @@ class RegisterExtComponentReply(metaclass=Metaclass_RegisterExtComponentReply):
         if 'name' not in kwargs:
             self.name = numpy.zeros(25, dtype=numpy.uint8)
         else:
-            self.name = numpy.array(kwargs.get('name'), dtype=numpy.uint8)
-            assert self.name.shape == (25, )
+            self.name = kwargs.get('name')
         self.px4_ros2_api_version = kwargs.get('px4_ros2_api_version', int())
         self.success = kwargs.get('success', bool())
         self.arming_check_id = kwargs.get('arming_check_id', int())

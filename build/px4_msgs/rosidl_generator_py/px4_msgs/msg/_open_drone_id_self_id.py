@@ -87,14 +87,12 @@ class OpenDroneIdSelfId(metaclass=Metaclass_OpenDroneIdSelfId):
         if 'id_or_mac' not in kwargs:
             self.id_or_mac = numpy.zeros(20, dtype=numpy.uint8)
         else:
-            self.id_or_mac = numpy.array(kwargs.get('id_or_mac'), dtype=numpy.uint8)
-            assert self.id_or_mac.shape == (20, )
+            self.id_or_mac = kwargs.get('id_or_mac')
         self.description_type = kwargs.get('description_type', int())
         if 'description' not in kwargs:
             self.description = numpy.zeros(23, dtype=numpy.uint8)
         else:
-            self.description = numpy.array(kwargs.get('description'), dtype=numpy.uint8)
-            assert self.description.shape == (23, )
+            self.description = kwargs.get('description')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

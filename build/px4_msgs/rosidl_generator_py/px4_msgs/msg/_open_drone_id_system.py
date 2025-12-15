@@ -115,8 +115,7 @@ class OpenDroneIdSystem(metaclass=Metaclass_OpenDroneIdSystem):
         if 'id_or_mac' not in kwargs:
             self.id_or_mac = numpy.zeros(20, dtype=numpy.uint8)
         else:
-            self.id_or_mac = numpy.array(kwargs.get('id_or_mac'), dtype=numpy.uint8)
-            assert self.id_or_mac.shape == (20, )
+            self.id_or_mac = kwargs.get('id_or_mac')
         self.operator_location_type = kwargs.get('operator_location_type', int())
         self.classification_type = kwargs.get('classification_type', int())
         self.operator_latitude = kwargs.get('operator_latitude', int())

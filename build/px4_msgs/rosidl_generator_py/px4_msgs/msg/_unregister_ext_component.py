@@ -101,8 +101,7 @@ class UnregisterExtComponent(metaclass=Metaclass_UnregisterExtComponent):
         if 'name' not in kwargs:
             self.name = numpy.zeros(25, dtype=numpy.uint8)
         else:
-            self.name = numpy.array(kwargs.get('name'), dtype=numpy.uint8)
-            assert self.name.shape == (25, )
+            self.name = kwargs.get('name')
         self.arming_check_id = kwargs.get('arming_check_id', int())
         self.mode_id = kwargs.get('mode_id', int())
         self.mode_executor_id = kwargs.get('mode_executor_id', int())

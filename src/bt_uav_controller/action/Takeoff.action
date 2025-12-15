@@ -1,0 +1,10 @@
+# Goal definition
+float32 target_altitude
+
+---
+# Result definition
+bool success
+
+---
+# Feedback definition
+float32 current_altitude

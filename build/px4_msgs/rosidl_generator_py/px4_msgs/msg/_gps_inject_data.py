@@ -112,8 +112,7 @@ class GpsInjectData(metaclass=Metaclass_GpsInjectData):
         if 'data' not in kwargs:
             self.data = numpy.zeros(300, dtype=numpy.uint8)
         else:
-            self.data = numpy.array(kwargs.get('data'), dtype=numpy.uint8)
-            assert self.data.shape == (300, )
+            self.data = kwargs.get('data')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

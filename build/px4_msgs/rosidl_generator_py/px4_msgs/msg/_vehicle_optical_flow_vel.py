@@ -118,48 +118,39 @@ class VehicleOpticalFlowVel(metaclass=Metaclass_VehicleOpticalFlowVel):
         if 'vel_body' not in kwargs:
             self.vel_body = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.vel_body = numpy.array(kwargs.get('vel_body'), dtype=numpy.float32)
-            assert self.vel_body.shape == (2, )
+            self.vel_body = kwargs.get('vel_body')
         if 'vel_ne' not in kwargs:
             self.vel_ne = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.vel_ne = numpy.array(kwargs.get('vel_ne'), dtype=numpy.float32)
-            assert self.vel_ne.shape == (2, )
+            self.vel_ne = kwargs.get('vel_ne')
         if 'vel_body_filtered' not in kwargs:
             self.vel_body_filtered = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.vel_body_filtered = numpy.array(kwargs.get('vel_body_filtered'), dtype=numpy.float32)
-            assert self.vel_body_filtered.shape == (2, )
+            self.vel_body_filtered = kwargs.get('vel_body_filtered')
         if 'vel_ne_filtered' not in kwargs:
             self.vel_ne_filtered = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.vel_ne_filtered = numpy.array(kwargs.get('vel_ne_filtered'), dtype=numpy.float32)
-            assert self.vel_ne_filtered.shape == (2, )
+            self.vel_ne_filtered = kwargs.get('vel_ne_filtered')
         if 'flow_rate_uncompensated' not in kwargs:
             self.flow_rate_uncompensated = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.flow_rate_uncompensated = numpy.array(kwargs.get('flow_rate_uncompensated'), dtype=numpy.float32)
-            assert self.flow_rate_uncompensated.shape == (2, )
+            self.flow_rate_uncompensated = kwargs.get('flow_rate_uncompensated')
         if 'flow_rate_compensated' not in kwargs:
             self.flow_rate_compensated = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.flow_rate_compensated = numpy.array(kwargs.get('flow_rate_compensated'), dtype=numpy.float32)
-            assert self.flow_rate_compensated.shape == (2, )
+            self.flow_rate_compensated = kwargs.get('flow_rate_compensated')
         if 'gyro_rate' not in kwargs:
             self.gyro_rate = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.gyro_rate = numpy.array(kwargs.get('gyro_rate'), dtype=numpy.float32)
-            assert self.gyro_rate.shape == (3, )
+            self.gyro_rate = kwargs.get('gyro_rate')
         if 'gyro_bias' not in kwargs:
             self.gyro_bias = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.gyro_bias = numpy.array(kwargs.get('gyro_bias'), dtype=numpy.float32)
-            assert self.gyro_bias.shape == (3, )
+            self.gyro_bias = kwargs.get('gyro_bias')
         if 'ref_gyro' not in kwargs:
             self.ref_gyro = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.ref_gyro = numpy.array(kwargs.get('ref_gyro'), dtype=numpy.float32)
-            assert self.ref_gyro.shape == (3, )
+            self.ref_gyro = kwargs.get('ref_gyro')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

@@ -1,1 +1,0 @@
-/home/imamalghifary/ws_sensor_combined/src/x500_description/launch/slam_with_bridge.launch.py

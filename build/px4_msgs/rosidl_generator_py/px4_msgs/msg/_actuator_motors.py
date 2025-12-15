@@ -118,8 +118,7 @@ class ActuatorMotors(metaclass=Metaclass_ActuatorMotors):
         if 'control' not in kwargs:
             self.control = numpy.zeros(12, dtype=numpy.float32)
         else:
-            self.control = numpy.array(kwargs.get('control'), dtype=numpy.float32)
-            assert self.control.shape == (12, )
+            self.control = kwargs.get('control')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

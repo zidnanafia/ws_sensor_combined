@@ -93,14 +93,12 @@ class EstimatorStates(metaclass=Metaclass_EstimatorStates):
         if 'states' not in kwargs:
             self.states = numpy.zeros(25, dtype=numpy.float32)
         else:
-            self.states = numpy.array(kwargs.get('states'), dtype=numpy.float32)
-            assert self.states.shape == (25, )
+            self.states = kwargs.get('states')
         self.n_states = kwargs.get('n_states', int())
         if 'covariances' not in kwargs:
             self.covariances = numpy.zeros(24, dtype=numpy.float32)
         else:
-            self.covariances = numpy.array(kwargs.get('covariances'), dtype=numpy.float32)
-            assert self.covariances.shape == (24, )
+            self.covariances = kwargs.get('covariances')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

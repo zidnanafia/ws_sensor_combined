@@ -102,13 +102,11 @@ class VehicleAttitudeSetpoint(metaclass=Metaclass_VehicleAttitudeSetpoint):
         if 'q_d' not in kwargs:
             self.q_d = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.q_d = numpy.array(kwargs.get('q_d'), dtype=numpy.float32)
-            assert self.q_d.shape == (4, )
+            self.q_d = kwargs.get('q_d')
         if 'thrust_body' not in kwargs:
             self.thrust_body = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.thrust_body = numpy.array(kwargs.get('thrust_body'), dtype=numpy.float32)
-            assert self.thrust_body.shape == (3, )
+            self.thrust_body = kwargs.get('thrust_body')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

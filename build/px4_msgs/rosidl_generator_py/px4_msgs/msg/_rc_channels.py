@@ -354,14 +354,12 @@ class RcChannels(metaclass=Metaclass_RcChannels):
         if 'channels' not in kwargs:
             self.channels = numpy.zeros(18, dtype=numpy.float32)
         else:
-            self.channels = numpy.array(kwargs.get('channels'), dtype=numpy.float32)
-            assert self.channels.shape == (18, )
+            self.channels = kwargs.get('channels')
         self.channel_count = kwargs.get('channel_count', int())
         if 'function' not in kwargs:
             self.function = numpy.zeros(30, dtype=numpy.int8)
         else:
-            self.function = numpy.array(kwargs.get('function'), dtype=numpy.int8)
-            assert self.function.shape == (30, )
+            self.function = kwargs.get('function')
         self.rssi = kwargs.get('rssi', int())
         self.signal_lost = kwargs.get('signal_lost', bool())
         self.frame_drop_count = kwargs.get('frame_drop_count', int())

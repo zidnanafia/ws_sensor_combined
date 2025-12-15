@@ -104,8 +104,7 @@ class FollowTargetStatus(metaclass=Metaclass_FollowTargetStatus):
         if 'desired_position_raw' not in kwargs:
             self.desired_position_raw = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.desired_position_raw = numpy.array(kwargs.get('desired_position_raw'), dtype=numpy.float32)
-            assert self.desired_position_raw.shape == (3, )
+            self.desired_position_raw = kwargs.get('desired_position_raw')
         self.in_emergency_ascent = kwargs.get('in_emergency_ascent', bool())
         self.gimbal_pitch = kwargs.get('gimbal_pitch', float())
 

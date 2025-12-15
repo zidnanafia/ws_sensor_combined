@@ -96,13 +96,11 @@ class AdcReport(metaclass=Metaclass_AdcReport):
         if 'channel_id' not in kwargs:
             self.channel_id = numpy.zeros(12, dtype=numpy.int16)
         else:
-            self.channel_id = numpy.array(kwargs.get('channel_id'), dtype=numpy.int16)
-            assert self.channel_id.shape == (12, )
+            self.channel_id = kwargs.get('channel_id')
         if 'raw_data' not in kwargs:
             self.raw_data = numpy.zeros(12, dtype=numpy.int32)
         else:
-            self.raw_data = numpy.array(kwargs.get('raw_data'), dtype=numpy.int32)
-            assert self.raw_data.shape == (12, )
+            self.raw_data = kwargs.get('raw_data')
         self.resolution = kwargs.get('resolution', int())
         self.v_ref = kwargs.get('v_ref', float())
 

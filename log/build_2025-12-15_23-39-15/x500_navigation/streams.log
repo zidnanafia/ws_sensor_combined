@@ -1,0 +1,44 @@
+[0.801s] Invoking command in '/home/imamalghifary/ws_sensor_combined/build/x500_navigation': PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build --no-deps symlink_data
+[1.151s] running develop
+[1.378s] running egg_info
+[1.378s] creating x500_navigation.egg-info
+[1.390s] writing x500_navigation.egg-info/PKG-INFO
+[1.390s] writing dependency_links to x500_navigation.egg-info/dependency_links.txt
+[1.390s] writing entry points to x500_navigation.egg-info/entry_points.txt
+[1.390s] writing requirements to x500_navigation.egg-info/requires.txt
+[1.390s] writing top-level names to x500_navigation.egg-info/top_level.txt
+[1.390s] writing manifest file 'x500_navigation.egg-info/SOURCES.txt'
+[1.414s] reading manifest file 'x500_navigation.egg-info/SOURCES.txt'
+[1.415s] writing manifest file 'x500_navigation.egg-info/SOURCES.txt'
+[1.434s] running build_ext
+[1.434s] Creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages/x500-navigation.egg-link (link to .)
+[1.435s] Installing bt_change_altitude script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[1.435s] Installing bt_land script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[1.435s] Installing bt_set_offboard script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[1.435s] Installing bt_stop_offboard script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[1.435s] Installing bt_takeoff script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[1.435s] Installing cmd_vel_to_offboard script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[1.436s] Installing nav2_goal_monitor script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[1.436s] Installing send_waypoints script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+[1.436s] 
+[1.436s] Installed /home/imamalghifary/ws_sensor_combined/build/x500_navigation
+[1.436s] running symlink_data
+[1.436s] creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/ament_index
+[1.436s] creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/ament_index/resource_index
+[1.436s] creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/ament_index/resource_index/packages
+[1.436s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/resource/x500_navigation -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/ament_index/resource_index/packages
+[1.436s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/package.xml -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation
+[1.436s] creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/launch
+[1.436s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/launch/x500_nav_bringup.launch.py -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/launch
+[1.437s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/launch/slam_nav2.launch.py -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/launch
+[1.437s] creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/params
+[1.437s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/params/nav2_params.yaml -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/params
+[1.437s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/params/nav2_bt_navigator.yaml -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/params
+[1.437s] creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/maps
+[1.437s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/maps/navigation_map7.yaml -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/maps
+[1.437s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/maps/navigation_map7.pgm -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/maps
+[1.437s] creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/rviz
+[1.437s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/rviz/x500_nav.rviz -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/rviz
+[1.437s] creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/behavior_trees
+[1.437s] symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/behavior_trees/simple_uav_test.xml -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/behavior_trees
+[1.472s] Invoked command in '/home/imamalghifary/ws_sensor_combined/build/x500_navigation' returned '0': PYTHONPATH=/home/imamalghifary/ws_sensor_combined/build/x500_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/imamalghifary/ws_sensor_combined/build/x500_navigation/build --no-deps symlink_data

@@ -188,8 +188,7 @@ class SystemPower(metaclass=Metaclass_SystemPower):
         if 'sensors3v3' not in kwargs:
             self.sensors3v3 = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.sensors3v3 = numpy.array(kwargs.get('sensors3v3'), dtype=numpy.float32)
-            assert self.sensors3v3.shape == (4, )
+            self.sensors3v3 = kwargs.get('sensors3v3')
         self.sensors3v3_valid = kwargs.get('sensors3v3_valid', int())
         self.usb_connected = kwargs.get('usb_connected', int())
         self.brick_valid = kwargs.get('brick_valid', int())

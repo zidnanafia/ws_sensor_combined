@@ -106,8 +106,7 @@ class ActuatorServos(metaclass=Metaclass_ActuatorServos):
         if 'control' not in kwargs:
             self.control = numpy.zeros(8, dtype=numpy.float32)
         else:
-            self.control = numpy.array(kwargs.get('control'), dtype=numpy.float32)
-            assert self.control.shape == (8, )
+            self.control = kwargs.get('control')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

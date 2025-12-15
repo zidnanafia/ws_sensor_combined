@@ -96,8 +96,7 @@ class MessageFormatRequest(metaclass=Metaclass_MessageFormatRequest):
         if 'topic_name' not in kwargs:
             self.topic_name = numpy.zeros(50, dtype=numpy.uint8)
         else:
-            self.topic_name = numpy.array(kwargs.get('topic_name'), dtype=numpy.uint8)
-            assert self.topic_name.shape == (50, )
+            self.topic_name = kwargs.get('topic_name')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

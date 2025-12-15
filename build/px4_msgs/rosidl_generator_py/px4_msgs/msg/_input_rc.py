@@ -272,8 +272,7 @@ class InputRc(metaclass=Metaclass_InputRc):
         if 'values' not in kwargs:
             self.values = numpy.zeros(18, dtype=numpy.uint16)
         else:
-            self.values = numpy.array(kwargs.get('values'), dtype=numpy.uint16)
-            assert self.values.shape == (18, )
+            self.values = kwargs.get('values')
         self.link_quality = kwargs.get('link_quality', int())
         self.rssi_dbm = kwargs.get('rssi_dbm', float())
 

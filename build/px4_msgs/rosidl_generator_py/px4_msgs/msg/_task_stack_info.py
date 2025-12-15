@@ -96,8 +96,7 @@ class TaskStackInfo(metaclass=Metaclass_TaskStackInfo):
         if 'task_name' not in kwargs:
             self.task_name = numpy.zeros(24, dtype=numpy.uint8)
         else:
-            self.task_name = numpy.array(kwargs.get('task_name'), dtype=numpy.uint8)
-            assert self.task_name.shape == (24, )
+            self.task_name = kwargs.get('task_name')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

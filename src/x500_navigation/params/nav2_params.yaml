@@ -8,7 +8,7 @@ amcl:
     alpha5: 0.2
     base_frame_id: "base_link"
     beam_skip_distance: 0.5
-    beam_skip_error_threshold: 0.9
+    beam_skip_error_threshold: 0.4
     beam_skip_threshold: 0.3
     do_beamskip: false
     global_frame_id: "map"
@@ -38,9 +38,9 @@ amcl:
     z_short: 0.05
     scan_topic: scan_fixed
     set_initial_pose: True
-    initial_pose_x: 0.0
-    initial_pose_y: 0.0
-    initial_pose_a: 0.0 
+    initial_pose_x: -0.069
+    initial_pose_y: 0.226
+    initial_pose_a: -1.683
 
 bt_navigator:
   ros__parameters:
@@ -104,6 +104,9 @@ bt_navigator:
       - nav2_assisted_teleop_cancel_bt_node
       - nav2_drive_on_heading_cancel_bt_node
       - nav2_is_battery_charging_condition_bt_node
+    use_bt_monitoring: True
+    zmq_publisher_port: 1666
+    zmq_server_port: 1667
 
 bt_navigator_navigate_through_poses_rclcpp_node:
   ros__parameters:
@@ -259,7 +262,7 @@ global_costmap:
 map_server:
   ros__parameters:
     use_sim_time: True
-    yaml_filename: "/home/imamalghifary/ws_sensor_combined/src/x500_navigation/maps/navigation_map3.yaml"
+    yaml_filename: "/home/imamalghifary/ws_sensor_combined/src/x500_navigation/maps/navigation_map7.yaml"
 
 map_saver:
   ros__parameters:

@@ -111,8 +111,7 @@ class Event(metaclass=Metaclass_Event):
         if 'arguments' not in kwargs:
             self.arguments = numpy.zeros(25, dtype=numpy.uint8)
         else:
-            self.arguments = numpy.array(kwargs.get('arguments'), dtype=numpy.uint8)
-            assert self.arguments.shape == (25, )
+            self.arguments = kwargs.get('arguments')
         self.log_levels = kwargs.get('log_levels', int())
 
     def __repr__(self):

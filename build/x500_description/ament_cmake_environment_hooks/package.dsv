@@ -1,4 +1,0 @@
-source;share/x500_description/local_setup.bash
-source;share/x500_description/local_setup.dsv
-source;share/x500_description/local_setup.sh
-source;share/x500_description/local_setup.zsh

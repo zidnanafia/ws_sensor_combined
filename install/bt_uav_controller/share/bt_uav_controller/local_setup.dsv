@@ -1,2 +1,1 @@
-source;share/bt_uav_controller/environment/ament_prefix_path.sh
-source;share/bt_uav_controller/environment/path.sh
+/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller/ament_cmake_environment_hooks/local_setup.dsv

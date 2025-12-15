@@ -102,13 +102,11 @@ class VehicleAngularVelocity(metaclass=Metaclass_VehicleAngularVelocity):
         if 'xyz' not in kwargs:
             self.xyz = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.xyz = numpy.array(kwargs.get('xyz'), dtype=numpy.float32)
-            assert self.xyz.shape == (3, )
+            self.xyz = kwargs.get('xyz')
         if 'xyz_derivative' not in kwargs:
             self.xyz_derivative = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.xyz_derivative = numpy.array(kwargs.get('xyz_derivative'), dtype=numpy.float32)
-            assert self.xyz_derivative.shape == (3, )
+            self.xyz_derivative = kwargs.get('xyz_derivative')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

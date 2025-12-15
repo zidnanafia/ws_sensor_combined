@@ -118,8 +118,7 @@ class GotoSetpoint(metaclass=Metaclass_GotoSetpoint):
         if 'position' not in kwargs:
             self.position = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.position = numpy.array(kwargs.get('position'), dtype=numpy.float32)
-            assert self.position.shape == (3, )
+            self.position = kwargs.get('position')
         self.flag_control_heading = kwargs.get('flag_control_heading', bool())
         self.heading = kwargs.get('heading', float())
         self.flag_set_max_horizontal_speed = kwargs.get('flag_set_max_horizontal_speed', bool())

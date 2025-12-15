@@ -162,8 +162,7 @@ class ObstacleDistance(metaclass=Metaclass_ObstacleDistance):
         if 'distances' not in kwargs:
             self.distances = numpy.zeros(72, dtype=numpy.uint16)
         else:
-            self.distances = numpy.array(kwargs.get('distances'), dtype=numpy.uint16)
-            assert self.distances.shape == (72, )
+            self.distances = kwargs.get('distances')
         self.increment = kwargs.get('increment', float())
         self.min_distance = kwargs.get('min_distance', int())
         self.max_distance = kwargs.get('max_distance', int())

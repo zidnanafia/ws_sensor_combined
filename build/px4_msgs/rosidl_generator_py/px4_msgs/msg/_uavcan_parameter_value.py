@@ -101,8 +101,7 @@ class UavcanParameterValue(metaclass=Metaclass_UavcanParameterValue):
         if 'param_id' not in kwargs:
             self.param_id = numpy.zeros(17, dtype=numpy.uint8)
         else:
-            self.param_id = numpy.array(kwargs.get('param_id'), dtype=numpy.uint8)
-            assert self.param_id.shape == (17, )
+            self.param_id = kwargs.get('param_id')
         self.param_index = kwargs.get('param_index', int())
         self.param_count = kwargs.get('param_count', int())
         self.param_type = kwargs.get('param_type', int())

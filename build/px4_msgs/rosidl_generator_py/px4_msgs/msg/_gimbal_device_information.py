@@ -226,18 +226,15 @@ class GimbalDeviceInformation(metaclass=Metaclass_GimbalDeviceInformation):
         if 'vendor_name' not in kwargs:
             self.vendor_name = numpy.zeros(32, dtype=numpy.uint8)
         else:
-            self.vendor_name = numpy.array(kwargs.get('vendor_name'), dtype=numpy.uint8)
-            assert self.vendor_name.shape == (32, )
+            self.vendor_name = kwargs.get('vendor_name')
         if 'model_name' not in kwargs:
             self.model_name = numpy.zeros(32, dtype=numpy.uint8)
         else:
-            self.model_name = numpy.array(kwargs.get('model_name'), dtype=numpy.uint8)
-            assert self.model_name.shape == (32, )
+            self.model_name = kwargs.get('model_name')
         if 'custom_name' not in kwargs:
             self.custom_name = numpy.zeros(32, dtype=numpy.uint8)
         else:
-            self.custom_name = numpy.array(kwargs.get('custom_name'), dtype=numpy.uint8)
-            assert self.custom_name.shape == (32, )
+            self.custom_name = kwargs.get('custom_name')
         self.firmware_version = kwargs.get('firmware_version', int())
         self.hardware_version = kwargs.get('hardware_version', int())
         self.uid = kwargs.get('uid', int())

@@ -128,38 +128,31 @@ class EstimatorAidSource2d(metaclass=Metaclass_EstimatorAidSource2d):
         if 'observation' not in kwargs:
             self.observation = numpy.zeros(2, dtype=numpy.float64)
         else:
-            self.observation = numpy.array(kwargs.get('observation'), dtype=numpy.float64)
-            assert self.observation.shape == (2, )
+            self.observation = kwargs.get('observation')
         if 'observation_variance' not in kwargs:
             self.observation_variance = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.observation_variance = numpy.array(kwargs.get('observation_variance'), dtype=numpy.float32)
-            assert self.observation_variance.shape == (2, )
+            self.observation_variance = kwargs.get('observation_variance')
         if 'innovation' not in kwargs:
             self.innovation = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.innovation = numpy.array(kwargs.get('innovation'), dtype=numpy.float32)
-            assert self.innovation.shape == (2, )
+            self.innovation = kwargs.get('innovation')
         if 'innovation_filtered' not in kwargs:
             self.innovation_filtered = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.innovation_filtered = numpy.array(kwargs.get('innovation_filtered'), dtype=numpy.float32)
-            assert self.innovation_filtered.shape == (2, )
+            self.innovation_filtered = kwargs.get('innovation_filtered')
         if 'innovation_variance' not in kwargs:
             self.innovation_variance = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.innovation_variance = numpy.array(kwargs.get('innovation_variance'), dtype=numpy.float32)
-            assert self.innovation_variance.shape == (2, )
+            self.innovation_variance = kwargs.get('innovation_variance')
         if 'test_ratio' not in kwargs:
             self.test_ratio = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.test_ratio = numpy.array(kwargs.get('test_ratio'), dtype=numpy.float32)
-            assert self.test_ratio.shape == (2, )
+            self.test_ratio = kwargs.get('test_ratio')
         if 'test_ratio_filtered' not in kwargs:
             self.test_ratio_filtered = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.test_ratio_filtered = numpy.array(kwargs.get('test_ratio_filtered'), dtype=numpy.float32)
-            assert self.test_ratio_filtered.shape == (2, )
+            self.test_ratio_filtered = kwargs.get('test_ratio_filtered')
         self.innovation_rejected = kwargs.get('innovation_rejected', bool())
         self.fused = kwargs.get('fused', bool())
 

@@ -90,8 +90,7 @@ class MessageFormatResponse(metaclass=Metaclass_MessageFormatResponse):
         if 'topic_name' not in kwargs:
             self.topic_name = numpy.zeros(50, dtype=numpy.uint8)
         else:
-            self.topic_name = numpy.array(kwargs.get('topic_name'), dtype=numpy.uint8)
-            assert self.topic_name.shape == (50, )
+            self.topic_name = kwargs.get('topic_name')
         self.success = kwargs.get('success', bool())
         self.message_hash = kwargs.get('message_hash', int())
 

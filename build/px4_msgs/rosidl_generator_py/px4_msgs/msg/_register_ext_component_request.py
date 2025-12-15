@@ -133,8 +133,7 @@ class RegisterExtComponentRequest(metaclass=Metaclass_RegisterExtComponentReques
         if 'name' not in kwargs:
             self.name = numpy.zeros(25, dtype=numpy.uint8)
         else:
-            self.name = numpy.array(kwargs.get('name'), dtype=numpy.uint8)
-            assert self.name.shape == (25, )
+            self.name = kwargs.get('name')
         self.px4_ros2_api_version = kwargs.get('px4_ros2_api_version', int())
         self.register_arming_check = kwargs.get('register_arming_check', bool())
         self.register_mode = kwargs.get('register_mode', bool())

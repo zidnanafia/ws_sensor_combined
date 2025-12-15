@@ -160,13 +160,11 @@ class SensorOpticalFlow(metaclass=Metaclass_SensorOpticalFlow):
         if 'pixel_flow' not in kwargs:
             self.pixel_flow = numpy.zeros(2, dtype=numpy.float32)
         else:
-            self.pixel_flow = numpy.array(kwargs.get('pixel_flow'), dtype=numpy.float32)
-            assert self.pixel_flow.shape == (2, )
+            self.pixel_flow = kwargs.get('pixel_flow')
         if 'delta_angle' not in kwargs:
             self.delta_angle = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.delta_angle = numpy.array(kwargs.get('delta_angle'), dtype=numpy.float32)
-            assert self.delta_angle.shape == (3, )
+            self.delta_angle = kwargs.get('delta_angle')
         self.delta_angle_available = kwargs.get('delta_angle_available', bool())
         self.distance_m = kwargs.get('distance_m', float())
         self.distance_available = kwargs.get('distance_available', bool())

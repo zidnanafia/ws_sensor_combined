@@ -1,0 +1,1 @@
+/home/imamalghifary/ws_sensor_combined/build/bt_uav_controller/rosidl_typesupport_introspection_c/bt_uav_controller/action/detail/takeoff__rosidl_typesupport_introspection_c.h

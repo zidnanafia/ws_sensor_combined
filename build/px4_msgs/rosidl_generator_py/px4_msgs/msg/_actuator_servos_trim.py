@@ -94,8 +94,7 @@ class ActuatorServosTrim(metaclass=Metaclass_ActuatorServosTrim):
         if 'trim' not in kwargs:
             self.trim = numpy.zeros(8, dtype=numpy.float32)
         else:
-            self.trim = numpy.array(kwargs.get('trim'), dtype=numpy.float32)
-            assert self.trim.shape == (8, )
+            self.trim = kwargs.get('trim')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

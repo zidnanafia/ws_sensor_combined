@@ -175,7 +175,7 @@ cdr_deserialize(
   cdr >> ros_message.filtered_horizontal_speed_m_s;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_px4_msgs

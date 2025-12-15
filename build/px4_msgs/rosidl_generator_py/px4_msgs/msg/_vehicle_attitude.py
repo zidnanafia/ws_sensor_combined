@@ -105,13 +105,11 @@ class VehicleAttitude(metaclass=Metaclass_VehicleAttitude):
         if 'q' not in kwargs:
             self.q = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.q = numpy.array(kwargs.get('q'), dtype=numpy.float32)
-            assert self.q.shape == (4, )
+            self.q = kwargs.get('q')
         if 'delta_q_reset' not in kwargs:
             self.delta_q_reset = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.delta_q_reset = numpy.array(kwargs.get('delta_q_reset'), dtype=numpy.float32)
-            assert self.delta_q_reset.shape == (4, )
+            self.delta_q_reset = kwargs.get('delta_q_reset')
         self.quat_reset_counter = kwargs.get('quat_reset_counter', int())
 
     def __repr__(self):

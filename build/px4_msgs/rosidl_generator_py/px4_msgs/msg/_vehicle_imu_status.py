@@ -143,13 +143,11 @@ class VehicleImuStatus(metaclass=Metaclass_VehicleImuStatus):
         if 'accel_clipping' not in kwargs:
             self.accel_clipping = numpy.zeros(3, dtype=numpy.uint32)
         else:
-            self.accel_clipping = numpy.array(kwargs.get('accel_clipping'), dtype=numpy.uint32)
-            assert self.accel_clipping.shape == (3, )
+            self.accel_clipping = kwargs.get('accel_clipping')
         if 'gyro_clipping' not in kwargs:
             self.gyro_clipping = numpy.zeros(3, dtype=numpy.uint32)
         else:
-            self.gyro_clipping = numpy.array(kwargs.get('gyro_clipping'), dtype=numpy.uint32)
-            assert self.gyro_clipping.shape == (3, )
+            self.gyro_clipping = kwargs.get('gyro_clipping')
         self.accel_error_count = kwargs.get('accel_error_count', int())
         self.gyro_error_count = kwargs.get('gyro_error_count', int())
         self.accel_rate_hz = kwargs.get('accel_rate_hz', float())
@@ -162,23 +160,19 @@ class VehicleImuStatus(metaclass=Metaclass_VehicleImuStatus):
         if 'mean_accel' not in kwargs:
             self.mean_accel = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.mean_accel = numpy.array(kwargs.get('mean_accel'), dtype=numpy.float32)
-            assert self.mean_accel.shape == (3, )
+            self.mean_accel = kwargs.get('mean_accel')
         if 'mean_gyro' not in kwargs:
             self.mean_gyro = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.mean_gyro = numpy.array(kwargs.get('mean_gyro'), dtype=numpy.float32)
-            assert self.mean_gyro.shape == (3, )
+            self.mean_gyro = kwargs.get('mean_gyro')
         if 'var_accel' not in kwargs:
             self.var_accel = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.var_accel = numpy.array(kwargs.get('var_accel'), dtype=numpy.float32)
-            assert self.var_accel.shape == (3, )
+            self.var_accel = kwargs.get('var_accel')
         if 'var_gyro' not in kwargs:
             self.var_gyro = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.var_gyro = numpy.array(kwargs.get('var_gyro'), dtype=numpy.float32)
-            assert self.var_gyro.shape == (3, )
+            self.var_gyro = kwargs.get('var_gyro')
         self.temperature_accel = kwargs.get('temperature_accel', float())
         self.temperature_gyro = kwargs.get('temperature_gyro', float())
 

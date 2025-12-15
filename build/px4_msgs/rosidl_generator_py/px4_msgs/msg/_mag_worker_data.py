@@ -125,8 +125,7 @@ class MagWorkerData(metaclass=Metaclass_MagWorkerData):
         if 'calibration_counter_total' not in kwargs:
             self.calibration_counter_total = numpy.zeros(4, dtype=numpy.uint32)
         else:
-            self.calibration_counter_total = numpy.array(kwargs.get('calibration_counter_total'), dtype=numpy.uint32)
-            assert self.calibration_counter_total.shape == (4, )
+            self.calibration_counter_total = kwargs.get('calibration_counter_total')
         self.side_data_collected = kwargs.get(
             'side_data_collected',
             [bool() for x in range(4)]
@@ -134,18 +133,15 @@ class MagWorkerData(metaclass=Metaclass_MagWorkerData):
         if 'x' not in kwargs:
             self.x = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.x = numpy.array(kwargs.get('x'), dtype=numpy.float32)
-            assert self.x.shape == (4, )
+            self.x = kwargs.get('x')
         if 'y' not in kwargs:
             self.y = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.y = numpy.array(kwargs.get('y'), dtype=numpy.float32)
-            assert self.y.shape == (4, )
+            self.y = kwargs.get('y')
         if 'z' not in kwargs:
             self.z = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.z = numpy.array(kwargs.get('z'), dtype=numpy.float32)
-            assert self.z.shape == (4, )
+            self.z = kwargs.get('z')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

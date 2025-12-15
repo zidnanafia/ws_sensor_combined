@@ -115,13 +115,11 @@ class SensorsStatusImu(metaclass=Metaclass_SensorsStatusImu):
         if 'accel_device_ids' not in kwargs:
             self.accel_device_ids = numpy.zeros(4, dtype=numpy.uint32)
         else:
-            self.accel_device_ids = numpy.array(kwargs.get('accel_device_ids'), dtype=numpy.uint32)
-            assert self.accel_device_ids.shape == (4, )
+            self.accel_device_ids = kwargs.get('accel_device_ids')
         if 'accel_inconsistency_m_s_s' not in kwargs:
             self.accel_inconsistency_m_s_s = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.accel_inconsistency_m_s_s = numpy.array(kwargs.get('accel_inconsistency_m_s_s'), dtype=numpy.float32)
-            assert self.accel_inconsistency_m_s_s.shape == (4, )
+            self.accel_inconsistency_m_s_s = kwargs.get('accel_inconsistency_m_s_s')
         self.accel_healthy = kwargs.get(
             'accel_healthy',
             [bool() for x in range(4)]
@@ -129,19 +127,16 @@ class SensorsStatusImu(metaclass=Metaclass_SensorsStatusImu):
         if 'accel_priority' not in kwargs:
             self.accel_priority = numpy.zeros(4, dtype=numpy.uint8)
         else:
-            self.accel_priority = numpy.array(kwargs.get('accel_priority'), dtype=numpy.uint8)
-            assert self.accel_priority.shape == (4, )
+            self.accel_priority = kwargs.get('accel_priority')
         self.gyro_device_id_primary = kwargs.get('gyro_device_id_primary', int())
         if 'gyro_device_ids' not in kwargs:
             self.gyro_device_ids = numpy.zeros(4, dtype=numpy.uint32)
         else:
-            self.gyro_device_ids = numpy.array(kwargs.get('gyro_device_ids'), dtype=numpy.uint32)
-            assert self.gyro_device_ids.shape == (4, )
+            self.gyro_device_ids = kwargs.get('gyro_device_ids')
         if 'gyro_inconsistency_rad_s' not in kwargs:
             self.gyro_inconsistency_rad_s = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.gyro_inconsistency_rad_s = numpy.array(kwargs.get('gyro_inconsistency_rad_s'), dtype=numpy.float32)
-            assert self.gyro_inconsistency_rad_s.shape == (4, )
+            self.gyro_inconsistency_rad_s = kwargs.get('gyro_inconsistency_rad_s')
         self.gyro_healthy = kwargs.get(
             'gyro_healthy',
             [bool() for x in range(4)]
@@ -149,8 +144,7 @@ class SensorsStatusImu(metaclass=Metaclass_SensorsStatusImu):
         if 'gyro_priority' not in kwargs:
             self.gyro_priority = numpy.zeros(4, dtype=numpy.uint8)
         else:
-            self.gyro_priority = numpy.array(kwargs.get('gyro_priority'), dtype=numpy.uint8)
-            assert self.gyro_priority.shape == (4, )
+            self.gyro_priority = kwargs.get('gyro_priority')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

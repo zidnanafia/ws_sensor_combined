@@ -3,17 +3,34 @@
 <package format="3">
   <name>bt_uav_controller</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Behavior Tree UAV Controller integrating PX4 and ROS 2 actions.</description>
   <maintainer email="zidna.nafia@student.president.ac.id">imamalghifary</maintainer>
-  <license>TODO: License declaration</license>
+  <license>Apache-2.0</license>
 
+  <!-- Build tools -->
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <!-- Core dependencies -->
   <depend>rclcpp</depend>
-  <depend>nav2_behavior_tree</depend>
+  <depend>rclcpp_action</depend>
   <depend>geometry_msgs</depend>
   <depend>nav_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>tf2_ros</depend>
 
+  <!-- Behavior Tree -->
+  <depend>behaviortree_cpp_v3</depend>
+
+  <!-- PX4 and Navigation -->
+  <depend>px4_msgs</depend>
+  <depend>nav2_msgs</depend>
+  <depend>nav2_behavior_tree</depend>
+
+  <!-- For custom action -->
+  <depend>rosidl_default_generators</depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <!-- Testing -->
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

@@ -1,7 +1,0 @@
-[01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/imamalghifary/ws_sensor_combined/src/bt_uav_controller/src/bt_uav_controller.cpp:179:23:[m[K [01;31m[Kerror: [m[K‘[01m[KregisterNodes[m[K’ is not a member of ‘[01m[Knav2_behavior_tree[m[K’
-  179 |   nav2_behavior_tree::[01;31m[KregisterNodes[m[K(factory);
-      |                       [01;31m[K^~~~~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/bt_uav_controller.dir/build.make:76: CMakeFiles/bt_uav_controller.dir/src/bt_uav_controller.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_uav_controller.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

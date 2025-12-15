@@ -539,8 +539,7 @@ class EstimatorStatus(metaclass=Metaclass_EstimatorStatus):
         if 'output_tracking_error' not in kwargs:
             self.output_tracking_error = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.output_tracking_error = numpy.array(kwargs.get('output_tracking_error'), dtype=numpy.float32)
-            assert self.output_tracking_error.shape == (3, )
+            self.output_tracking_error = kwargs.get('output_tracking_error')
         self.gps_check_fail_flags = kwargs.get('gps_check_fail_flags', int())
         self.control_mode_flags = kwargs.get('control_mode_flags', int())
         self.filter_fault_flags = kwargs.get('filter_fault_flags', int())

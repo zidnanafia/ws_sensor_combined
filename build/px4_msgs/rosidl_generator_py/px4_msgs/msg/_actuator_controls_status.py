@@ -82,8 +82,7 @@ class ActuatorControlsStatus(metaclass=Metaclass_ActuatorControlsStatus):
         if 'control_power' not in kwargs:
             self.control_power = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.control_power = numpy.array(kwargs.get('control_power'), dtype=numpy.float32)
-            assert self.control_power.shape == (3, )
+            self.control_power = kwargs.get('control_power')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

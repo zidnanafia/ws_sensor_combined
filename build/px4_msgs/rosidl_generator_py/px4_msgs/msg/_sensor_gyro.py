@@ -125,8 +125,7 @@ class SensorGyro(metaclass=Metaclass_SensorGyro):
         if 'clip_counter' not in kwargs:
             self.clip_counter = numpy.zeros(3, dtype=numpy.uint8)
         else:
-            self.clip_counter = numpy.array(kwargs.get('clip_counter'), dtype=numpy.uint8)
-            assert self.clip_counter.shape == (3, )
+            self.clip_counter = kwargs.get('clip_counter')
         self.samples = kwargs.get('samples', int())
 
     def __repr__(self):

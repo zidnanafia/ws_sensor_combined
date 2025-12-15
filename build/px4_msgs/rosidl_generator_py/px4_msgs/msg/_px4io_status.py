@@ -202,28 +202,23 @@ class Px4ioStatus(metaclass=Metaclass_Px4ioStatus):
         if 'pwm' not in kwargs:
             self.pwm = numpy.zeros(8, dtype=numpy.uint16)
         else:
-            self.pwm = numpy.array(kwargs.get('pwm'), dtype=numpy.uint16)
-            assert self.pwm.shape == (8, )
+            self.pwm = kwargs.get('pwm')
         if 'pwm_disarmed' not in kwargs:
             self.pwm_disarmed = numpy.zeros(8, dtype=numpy.uint16)
         else:
-            self.pwm_disarmed = numpy.array(kwargs.get('pwm_disarmed'), dtype=numpy.uint16)
-            assert self.pwm_disarmed.shape == (8, )
+            self.pwm_disarmed = kwargs.get('pwm_disarmed')
         if 'pwm_failsafe' not in kwargs:
             self.pwm_failsafe = numpy.zeros(8, dtype=numpy.uint16)
         else:
-            self.pwm_failsafe = numpy.array(kwargs.get('pwm_failsafe'), dtype=numpy.uint16)
-            assert self.pwm_failsafe.shape == (8, )
+            self.pwm_failsafe = kwargs.get('pwm_failsafe')
         if 'pwm_rate_hz' not in kwargs:
             self.pwm_rate_hz = numpy.zeros(8, dtype=numpy.uint16)
         else:
-            self.pwm_rate_hz = numpy.array(kwargs.get('pwm_rate_hz'), dtype=numpy.uint16)
-            assert self.pwm_rate_hz.shape == (8, )
+            self.pwm_rate_hz = kwargs.get('pwm_rate_hz')
         if 'raw_inputs' not in kwargs:
             self.raw_inputs = numpy.zeros(18, dtype=numpy.uint16)
         else:
-            self.raw_inputs = numpy.array(kwargs.get('raw_inputs'), dtype=numpy.uint16)
-            assert self.raw_inputs.shape == (18, )
+            self.raw_inputs = kwargs.get('raw_inputs')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

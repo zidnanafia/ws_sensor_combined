@@ -129,33 +129,27 @@ class RcParameterMap(metaclass=Metaclass_RcParameterMap):
         if 'param_index' not in kwargs:
             self.param_index = numpy.zeros(3, dtype=numpy.int32)
         else:
-            self.param_index = numpy.array(kwargs.get('param_index'), dtype=numpy.int32)
-            assert self.param_index.shape == (3, )
+            self.param_index = kwargs.get('param_index')
         if 'param_id' not in kwargs:
             self.param_id = numpy.zeros(51, dtype=numpy.uint8)
         else:
-            self.param_id = numpy.array(kwargs.get('param_id'), dtype=numpy.uint8)
-            assert self.param_id.shape == (51, )
+            self.param_id = kwargs.get('param_id')
         if 'scale' not in kwargs:
             self.scale = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.scale = numpy.array(kwargs.get('scale'), dtype=numpy.float32)
-            assert self.scale.shape == (3, )
+            self.scale = kwargs.get('scale')
         if 'value0' not in kwargs:
             self.value0 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.value0 = numpy.array(kwargs.get('value0'), dtype=numpy.float32)
-            assert self.value0.shape == (3, )
+            self.value0 = kwargs.get('value0')
         if 'value_min' not in kwargs:
             self.value_min = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.value_min = numpy.array(kwargs.get('value_min'), dtype=numpy.float32)
-            assert self.value_min.shape == (3, )
+            self.value_min = kwargs.get('value_min')
         if 'value_max' not in kwargs:
             self.value_max = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.value_max = numpy.array(kwargs.get('value_max'), dtype=numpy.float32)
-            assert self.value_max.shape == (3, )
+            self.value_max = kwargs.get('value_max')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

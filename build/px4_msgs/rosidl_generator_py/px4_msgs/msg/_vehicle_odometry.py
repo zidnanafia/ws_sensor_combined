@@ -191,39 +191,32 @@ class VehicleOdometry(metaclass=Metaclass_VehicleOdometry):
         if 'position' not in kwargs:
             self.position = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.position = numpy.array(kwargs.get('position'), dtype=numpy.float32)
-            assert self.position.shape == (3, )
+            self.position = kwargs.get('position')
         if 'q' not in kwargs:
             self.q = numpy.zeros(4, dtype=numpy.float32)
         else:
-            self.q = numpy.array(kwargs.get('q'), dtype=numpy.float32)
-            assert self.q.shape == (4, )
+            self.q = kwargs.get('q')
         self.velocity_frame = kwargs.get('velocity_frame', int())
         if 'velocity' not in kwargs:
             self.velocity = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.velocity = numpy.array(kwargs.get('velocity'), dtype=numpy.float32)
-            assert self.velocity.shape == (3, )
+            self.velocity = kwargs.get('velocity')
         if 'angular_velocity' not in kwargs:
             self.angular_velocity = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.angular_velocity = numpy.array(kwargs.get('angular_velocity'), dtype=numpy.float32)
-            assert self.angular_velocity.shape == (3, )
+            self.angular_velocity = kwargs.get('angular_velocity')
         if 'position_variance' not in kwargs:
             self.position_variance = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.position_variance = numpy.array(kwargs.get('position_variance'), dtype=numpy.float32)
-            assert self.position_variance.shape == (3, )
+            self.position_variance = kwargs.get('position_variance')
         if 'orientation_variance' not in kwargs:
             self.orientation_variance = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.orientation_variance = numpy.array(kwargs.get('orientation_variance'), dtype=numpy.float32)
-            assert self.orientation_variance.shape == (3, )
+            self.orientation_variance = kwargs.get('orientation_variance')
         if 'velocity_variance' not in kwargs:
             self.velocity_variance = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.velocity_variance = numpy.array(kwargs.get('velocity_variance'), dtype=numpy.float32)
-            assert self.velocity_variance.shape == (3, )
+            self.velocity_variance = kwargs.get('velocity_variance')
         self.reset_counter = kwargs.get('reset_counter', int())
         self.quality = kwargs.get('quality', int())
 

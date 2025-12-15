@@ -1,0 +1,42 @@
+running develop
+running egg_info
+creating x500_navigation.egg-info
+writing x500_navigation.egg-info/PKG-INFO
+writing dependency_links to x500_navigation.egg-info/dependency_links.txt
+writing entry points to x500_navigation.egg-info/entry_points.txt
+writing requirements to x500_navigation.egg-info/requires.txt
+writing top-level names to x500_navigation.egg-info/top_level.txt
+writing manifest file 'x500_navigation.egg-info/SOURCES.txt'
+reading manifest file 'x500_navigation.egg-info/SOURCES.txt'
+writing manifest file 'x500_navigation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/python3.10/site-packages/x500-navigation.egg-link (link to .)
+Installing bt_change_altitude script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+Installing bt_land script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+Installing bt_set_offboard script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+Installing bt_stop_offboard script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+Installing bt_takeoff script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+Installing cmd_vel_to_offboard script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+Installing nav2_goal_monitor script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+Installing send_waypoints script to /home/imamalghifary/ws_sensor_combined/install/x500_navigation/lib/x500_navigation
+
+Installed /home/imamalghifary/ws_sensor_combined/build/x500_navigation
+running symlink_data
+creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/ament_index
+creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/ament_index/resource_index
+creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/ament_index/resource_index/packages
+symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/resource/x500_navigation -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/ament_index/resource_index/packages
+symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/package.xml -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation
+creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/launch
+symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/launch/x500_nav_bringup.launch.py -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/launch
+symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/launch/slam_nav2.launch.py -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/launch
+creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/params
+symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/params/nav2_params.yaml -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/params
+symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/params/nav2_bt_navigator.yaml -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/params
+creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/maps
+symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/maps/navigation_map7.yaml -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/maps
+symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/maps/navigation_map7.pgm -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/maps
+creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/rviz
+symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/rviz/x500_nav.rviz -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/rviz
+creating /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/behavior_trees
+symbolically linking /home/imamalghifary/ws_sensor_combined/build/x500_navigation/behavior_trees/simple_uav_test.xml -> /home/imamalghifary/ws_sensor_combined/install/x500_navigation/share/x500_navigation/behavior_trees

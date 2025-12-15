@@ -235,7 +235,7 @@ cdr_deserialize(
   cdr >> ros_message.rtcm_msg_used;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_px4_msgs

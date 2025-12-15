@@ -1,2 +1,2 @@
 # CMAKE generated file: DO NOT EDIT!
-# Timestamp file for compiler generated dependencies management for bt_uav_controller.
+# Timestamp file for custom commands dependencies management for bt_uav_controller.

@@ -114,8 +114,7 @@ class GimbalControls(metaclass=Metaclass_GimbalControls):
         if 'control' not in kwargs:
             self.control = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.control = numpy.array(kwargs.get('control'), dtype=numpy.float32)
-            assert self.control.shape == (3, )
+            self.control = kwargs.get('control')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

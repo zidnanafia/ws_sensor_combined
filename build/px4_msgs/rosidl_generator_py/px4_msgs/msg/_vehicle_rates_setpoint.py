@@ -109,8 +109,7 @@ class VehicleRatesSetpoint(metaclass=Metaclass_VehicleRatesSetpoint):
         if 'thrust_body' not in kwargs:
             self.thrust_body = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.thrust_body = numpy.array(kwargs.get('thrust_body'), dtype=numpy.float32)
-            assert self.thrust_body.shape == (3, )
+            self.thrust_body = kwargs.get('thrust_body')
         self.reset_integral = kwargs.get('reset_integral', bool())
 
     def __repr__(self):

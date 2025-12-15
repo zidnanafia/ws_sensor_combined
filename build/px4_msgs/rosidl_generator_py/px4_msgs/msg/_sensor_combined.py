@@ -143,15 +143,13 @@ class SensorCombined(metaclass=Metaclass_SensorCombined):
         if 'gyro_rad' not in kwargs:
             self.gyro_rad = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.gyro_rad = numpy.array(kwargs.get('gyro_rad'), dtype=numpy.float32)
-            assert self.gyro_rad.shape == (3, )
+            self.gyro_rad = kwargs.get('gyro_rad')
         self.gyro_integral_dt = kwargs.get('gyro_integral_dt', int())
         self.accelerometer_timestamp_relative = kwargs.get('accelerometer_timestamp_relative', int())
         if 'accelerometer_m_s2' not in kwargs:
             self.accelerometer_m_s2 = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.accelerometer_m_s2 = numpy.array(kwargs.get('accelerometer_m_s2'), dtype=numpy.float32)
-            assert self.accelerometer_m_s2.shape == (3, )
+            self.accelerometer_m_s2 = kwargs.get('accelerometer_m_s2')
         self.accelerometer_integral_dt = kwargs.get('accelerometer_integral_dt', int())
         self.accelerometer_clipping = kwargs.get('accelerometer_clipping', int())
         self.gyro_clipping = kwargs.get('gyro_clipping', int())

@@ -82,8 +82,7 @@ class MountOrientation(metaclass=Metaclass_MountOrientation):
         if 'attitude_euler_angle' not in kwargs:
             self.attitude_euler_angle = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.attitude_euler_angle = numpy.array(kwargs.get('attitude_euler_angle'), dtype=numpy.float32)
-            assert self.attitude_euler_angle.shape == (3, )
+            self.attitude_euler_angle = kwargs.get('attitude_euler_angle')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

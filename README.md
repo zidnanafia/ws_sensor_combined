@@ -1,6 +1,3 @@
-Here is a **clean, copy-paste-ready README.md** you can directly use on GitHub.
-It is written in a clear technical style and matches exactly what you described.
-
 ---
 
 # UAV Localization and Autonomous Navigation Simulation (ROS 2 + PX4)

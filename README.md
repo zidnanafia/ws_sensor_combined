@@ -1,5 +1,3 @@
----
-
 # UAV Localization and Autonomous Navigation Simulation (ROS 2 + PX4)
 
 This repository contains a **UAV localization and autonomous navigation simulation** built using **ROS 2 Humble**, **PX4 Autopilot**, and **Gazebo Harmonic**, designed for a warehouse environment.
@@ -7,7 +5,7 @@ The system supports **SLAM-based mapping**, **autonomous navigation**, and **ful
 
 ---
 
-## 📌 System Overview
+## System Overview
 
 The project integrates multiple software components into a single autonomous UAV architecture:
 
@@ -20,7 +18,7 @@ The project integrates multiple software components into a single autonomous UAV
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 * Ubuntu 22.04 LTS
 * ROS 2 Humble
@@ -32,7 +30,7 @@ Make sure your ROS 2 and PX4 environments are properly installed and sourced.
 
 ---
 
-## 🔧 Environment Setup
+## Environment Setup
 
 ### 1️⃣ Modify `.bashrc`
 
@@ -50,7 +48,7 @@ source ~/.bashrc
 
 ---
 
-## 📦 PX4 Offboard Package
+## PX4 Offboard Package
 
 This project uses a **modified version** of `ROS2_PX4_Offboard_Example`.
 
@@ -66,7 +64,7 @@ unzip ROS2_PX4_Offboard_Example.zip
 
 ---
 
-## 🛠 Build the Workspace
+## Build the Workspace
 
 From your workspace root:
 
@@ -79,7 +77,7 @@ source install/setup.bash
 
 ---
 
-## 🚀 Running the System
+## Running the System
 
 Run the following commands **in separate terminals** (source the workspace in each terminal).
 
@@ -109,7 +107,7 @@ ros2 run bt_uav_controller bt_uav_controller_node
 
 ---
 
-## 🗺 Mapping Mode (SLAM)
+## Mapping Mode (SLAM)
 
 To perform **mapping** instead of navigation:
 
@@ -127,7 +125,7 @@ This will enable real-time mapping and visualization using SLAM Toolbox.
 
 ---
 
-## 📁 Project Structure (Simplified)
+## Project Structure (Simplified)
 
 ```
 ws_sensor_combined/

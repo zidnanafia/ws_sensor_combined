@@ -30,7 +30,7 @@ Make sure your ROS 2 and PX4 environments are properly installed and sourced.
 
 ---
 
-## Warehouse World and MOdel
+## Warehouse World and Model
 To use the warehouse simulation world, place the following files in the specified directories:
 * warehouse.sdf (PX4-Autopilot/Tools/simulation/gz/worlds/)
 * warehouse_rack (PX4-Autopilot/Tools/simulation/gz/models/)
